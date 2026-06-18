@@ -1,0 +1,2637 @@
+{
+  "General Science": {
+    "General": [
+      {
+        "subreddit": "/r/askscience",
+        "sub_count": 26119131,
+        "activity": "264/55/429",
+        "activity_rank": "Low",
+        "description": "AskScience: Got Questions? Get Answers."
+      },
+      {
+        "subreddit": "/r/asksciencediscussion",
+        "sub_count": 159128,
+        "activity": "13/21/18",
+        "activity_rank": "Very Low",
+        "description": "Discuss, learn, teach. Follow the tangents."
+      },
+      {
+        "subreddit": "/r/AskSciTech",
+        "sub_count": 2590,
+        "activity": "4/2/5",
+        "activity_rank": "Very Low",
+        "description": "Where to go with technical questions about science.."
+      },
+      {
+        "subreddit": "/r/curiousvideos",
+        "sub_count": 35732,
+        "activity": "3/0/0",
+        "activity_rank": "Very Low",
+        "description": "CuriousVideos: stimulating videos on science, arts.."
+      },
+      {
+        "subreddit": "/r/everythingscience",
+        "sub_count": 594000,
+        "activity": "317/23/52",
+        "activity_rank": "Average",
+        "description": "Everything Science"
+      },
+      {
+        "subreddit": "/r/FunnyScience",
+        "sub_count": 1002,
+        "activity": "4/0/2",
+        "activity_rank": "Very Low",
+        "description": "The lighter side of science"
+      },
+      {
+        "subreddit": "/r/futurology",
+        "sub_count": 21575868,
+        "activity": "750/78/1374",
+        "activity_rank": "High",
+        "description": "Future(s) Studies"
+      },
+      {
+        "subreddit": "/r/kurzgesagt",
+        "sub_count": 212048,
+        "activity": "122/14/9",
+        "activity_rank": "Very Low",
+        "description": "Kurzgesagt – In a nutshell"
+      },
+      {
+        "subreddit": "/r/labrats",
+        "sub_count": 669404,
+        "activity": "113/20/45",
+        "activity_rank": "High",
+        "description": "A hangout for lab nerds!"
+      },
+      {
+        "subreddit": "/r/labsafety",
+        "sub_count": 1064,
+        "activity": "7/3/0",
+        "activity_rank": "Very Low",
+        "description": "Lab Safety"
+      },
+      {
+        "subreddit": "/r/ladiesofscience",
+        "sub_count": 45964,
+        "activity": "251/12/7",
+        "activity_rank": "Very Low",
+        "description": "Science and everyday life cannot and should not be.."
+      },
+      {
+        "subreddit": "/r/metric",
+        "sub_count": 8314,
+        "activity": "22/22/5",
+        "activity_rank": "Very Low",
+        "description": "Metric: Setting the Standard of Measurement"
+      },
+      {
+        "subreddit": "/r/philosophyofscience",
+        "sub_count": 177471,
+        "activity": "6/27/13",
+        "activity_rank": "Very Low",
+        "description": "Philosophy of Science"
+      },
+      {
+        "subreddit": "/r/science",
+        "sub_count": 34072568,
+        "activity": "1947/102/850",
+        "activity_rank": "High",
+        "description": "Reddit Science"
+      },
+      {
+        "subreddit": "/r/sciences",
+        "sub_count": 213644,
+        "activity": "83/15/6",
+        "activity_rank": "Very Low",
+        "description": "r/Sciences - Science on Reddit"
+      },
+      {
+        "subreddit": "/r/science_infographics",
+        "sub_count": 2493,
+        "activity": "5/0/3",
+        "activity_rank": "Very Low",
+        "description": "Science Infographics"
+      },
+      {
+        "subreddit": "/r/science2",
+        "sub_count": 6806,
+        "activity": "3/0/4",
+        "activity_rank": "Very Low",
+        "description": "Science 2"
+      },
+      {
+        "subreddit": "/r/ScienceBritannica",
+        "sub_count": 517,
+        "activity": "2/2/4",
+        "activity_rank": "Very Low",
+        "description": "Science in Britain"
+      },
+      {
+        "subreddit": "/r/ScienceCanada",
+        "sub_count": 792,
+        "activity": "4/0/0",
+        "activity_rank": "Very Low",
+        "description": "Canadian Science News"
+      },
+      {
+        "subreddit": "/r/ScienceFacts",
+        "sub_count": 64973,
+        "activity": "58/0/9",
+        "activity_rank": "Very Low",
+        "description": "Science is awesome!"
+      },
+      {
+        "subreddit": "/r/ScienceFeed",
+        "sub_count": 718,
+        "activity": "1/0/5",
+        "activity_rank": "Average",
+        "description": "ScienceFeed"
+      },
+      {
+        "subreddit": "/r/scienceparents",
+        "sub_count": 13753,
+        "activity": "7/2/4",
+        "activity_rank": "Very Low",
+        "description": "Science Parents"
+      },
+      {
+        "subreddit": "/r/scienceteachers",
+        "sub_count": 46594,
+        "activity": "21/18/9",
+        "activity_rank": "Low",
+        "description": "Science Teachers"
+      },
+      {
+        "subreddit": "/r/scientificresearch",
+        "sub_count": 7940,
+        "activity": "3/4/5",
+        "activity_rank": "Very Low",
+        "description": "Scientific Research"
+      },
+      {
+        "subreddit": "/r/scishow",
+        "sub_count": 1407,
+        "activity": "3/0/3",
+        "activity_rank": "Very Low",
+        "description": "SciShow"
+      },
+      {
+        "subreddit": "/r/sciencegifs",
+        "sub_count": 8670,
+        "activity": "56/3/3",
+        "activity_rank": "Very Low",
+        "description": "Science GIFs"
+      },
+      {
+        "subreddit": "/r/educationalgifs",
+        "sub_count": 2979165,
+        "activity": "4636/135/24",
+        "activity_rank": "Very Low",
+        "description": "For .gifs that provide knowledge!"
+      },
+      {
+        "subreddit": "/r/STEW_ScTecEngWorld",
+        "sub_count": 74000,
+        "activity": "r/STEW_ScTecEngWorld - SCIENCE, TECHNOLOGY, and ENGINEERING",
+        "activity_rank": null,
+        "description": null
+      },
+      {
+        "subreddit": "/r/ScienceNcoolThings",
+        "sub_count": 249000,
+        "activity": "interesting files, sometimes science-related",
+        "activity_rank": null,
+        "description": null
+      }
+    ],
+    "By Language": [
+      {
+        "subreddit": "/r/Wissenschaft",
+        "sub_count": 97963,
+        "activity": "8/1/5",
+        "activity_rank": "Very Low",
+        "description": "Wissenschaft"
+      }
+    ]
+  },
+  "Formal Sciences": {
+    "Mathematics": [
+      {
+        "subreddit": "/r/askmath",
+        "sub_count": 196869,
+        "activity": "21/14/169",
+        "activity_rank": "Average",
+        "description": "Ask a Math Question"
+      },
+      {
+        "subreddit": "/r/coolmathgames",
+        "sub_count": 2952,
+        "activity": "4/2/6",
+        "activity_rank": "Very Low",
+        "description": "Cool Math Games"
+      },
+      {
+        "subreddit": "/r/ELI5Math",
+        "sub_count": 1141,
+        "activity": "1/2/2",
+        "activity_rank": "Very Low",
+        "description": "ELI5math"
+      },
+      {
+        "subreddit": "/r/funmath",
+        "sub_count": 983,
+        "activity": "1/0/5",
+        "activity_rank": "Very Low",
+        "description": "A place for fun kinds of math"
+      },
+      {
+        "subreddit": "/r/help_with_math",
+        "sub_count": 1126,
+        "activity": "1/1/4",
+        "activity_rank": "Very Low",
+        "description": "Help With Math"
+      },
+      {
+        "subreddit": "/r/learnmath",
+        "sub_count": 384760,
+        "activity": "30/12/174",
+        "activity_rank": "Very Low",
+        "description": "Learn Math"
+      },
+      {
+        "subreddit": "/r/math2",
+        "sub_count": 50,
+        "activity": "1/0/4",
+        "activity_rank": "Very Low",
+        "description": "math2: research papers, no fluff"
+      },
+      {
+        "subreddit": "/r/matheducation",
+        "sub_count": 33927,
+        "activity": "6/11/12",
+        "activity_rank": "Very Low",
+        "description": "Math Education: Mathematics for Educators"
+      },
+      {
+        "subreddit": "/r/mathforall",
+        "sub_count": 728,
+        "activity": "5/2/5",
+        "activity_rank": "Very Low",
+        "description": "Math For Everyone!!"
+      },
+      {
+        "subreddit": "/r/mathgifs",
+        "sub_count": 7425,
+        "activity": "36/2/2",
+        "activity_rank": "Very Low",
+        "description": "Math GIFs: math concepts in motion"
+      },
+      {
+        "subreddit": "/r/mathhelp",
+        "sub_count": 49843,
+        "activity": "2/4/19",
+        "activity_rank": "Very Low",
+        "description": "Math Help - Enthusiastic Students, Willing Teachers"
+      },
+      {
+        "subreddit": "/r/mathideas",
+        "sub_count": 258,
+        "activity": "2/0/4",
+        "activity_rank": "Very Low",
+        "description": "Math Ideas"
+      },
+      {
+        "subreddit": "/r/mathisbeautiful",
+        "sub_count": 771,
+        "activity": "3/0/2",
+        "activity_rank": "Very Low",
+        "description": "Math is Beautiful"
+      },
+      {
+        "subreddit": "/r/mathpics",
+        "sub_count": 28188,
+        "activity": "17/3/5",
+        "activity_rank": "Very Low",
+        "description": "Math Pics: What math looks like"
+      },
+      {
+        "subreddit": "/r/mathpuzzles",
+        "sub_count": 4207,
+        "activity": "3/4/4",
+        "activity_rank": "Very Low",
+        "description": "Math(s) Puzzles"
+      },
+      {
+        "subreddit": "/r/mathresources",
+        "sub_count": 242,
+        "activity": "2/0/0",
+        "activity_rank": "Very Low",
+        "description": "Resources for Teaching Math"
+      },
+      {
+        "subreddit": "/r/mathstudents",
+        "sub_count": 1836,
+        "activity": "2/1/4",
+        "activity_rank": "Very Low",
+        "description": "Math Students"
+      },
+      {
+        "subreddit": "/r/sacredgeometry",
+        "sub_count": 166431,
+        "activity": "43/11/2",
+        "activity_rank": "Low",
+        "description": "Where Math and Imagination Meet"
+      },
+      {
+        "subreddit": "/r/solvedmathproblems",
+        "sub_count": 271,
+        "activity": "1/1/2",
+        "activity_rank": "Very Low",
+        "description": "Solved Math Problems"
+      },
+      {
+        "subreddit": "/r/theydidthemath",
+        "sub_count": 1981337,
+        "activity": "834/71/563",
+        "activity_rank": "High",
+        "description": "Useless Yet Interesting Calculations"
+      }
+    ]
+  },
+  "Physical Sciences": {
+    "Chemistry": [
+      {
+        "subreddit": "/r/aboutdopamine",
+        "sub_count": 2707,
+        "activity": "6/3/0",
+        "activity_rank": "Very Low",
+        "description": "Dopamine"
+      },
+      {
+        "subreddit": "/r/AnalyticalScience",
+        "sub_count": 477,
+        "activity": "1/0/5",
+        "activity_rank": "Very Low",
+        "description": "Analytical Science and Chemistry"
+      },
+      {
+        "subreddit": "/r/APChem",
+        "sub_count": 8712,
+        "activity": "11/10/5",
+        "activity_rank": "Low",
+        "description": "Chemistry Forum"
+      },
+      {
+        "subreddit": "/r/APChemists",
+        "sub_count": 252,
+        "activity": "3/2/2",
+        "activity_rank": "Very Low",
+        "description": "AP Chemists: We love Chemistry!"
+      },
+      {
+        "subreddit": "/r/ASA_Chemistry",
+        "sub_count": 762,
+        "activity": "1/1/5",
+        "activity_rank": "Very Low",
+        "description": "AskScience chemistry"
+      },
+      {
+        "subreddit": "/r/Biochemistry",
+        "sub_count": 131651,
+        "activity": "12/6/12",
+        "activity_rank": "Low",
+        "description": "Biochemistry"
+      },
+      {
+        "subreddit": "/r/ChemHelp",
+        "sub_count": 94750,
+        "activity": "7/6/15",
+        "activity_rank": "Very Low",
+        "description": "ChemHelp: a place to ask questions about chemistry"
+      },
+      {
+        "subreddit": "/r/ChemicalEngineering",
+        "sub_count": 116331,
+        "activity": "21/9/20",
+        "activity_rank": "Very Low",
+        "description": "Chemical Engineering"
+      },
+      {
+        "subreddit": "/r/ChemicalReactionGifs",
+        "sub_count": 1286854,
+        "activity": "1034/33/8",
+        "activity_rank": "Very Low",
+        "description": "Chemical Reaction GIFs"
+      },
+      {
+        "subreddit": "/r/Chemistry",
+        "sub_count": 3834807,
+        "activity": "67/21/58",
+        "activity_rank": "High",
+        "description": "Reddit Chemistry - Read the sidebar"
+      },
+      {
+        "subreddit": "/r/Chemistry101",
+        "sub_count": 453,
+        "activity": "1/0/2",
+        "activity_rank": "Very Low",
+        "description": "Chemistry"
+      },
+      {
+        "subreddit": "/r/ChemistryBooks",
+        "sub_count": 222,
+        "activity": "1/0/2",
+        "activity_rank": "Very Low",
+        "description": "Free chemistry books!"
+      },
+      {
+        "subreddit": "/r/ChemJobs",
+        "sub_count": 552,
+        "activity": "2/1/2",
+        "activity_rank": "Very Low",
+        "description": "Job listings in the Chemistry field"
+      },
+      {
+        "subreddit": "/r/CompoundInterest",
+        "sub_count": 462,
+        "activity": "2/0/5",
+        "activity_rank": "Very Low",
+        "description": "Compound Interest: Chemistry Infographics"
+      },
+      {
+        "subreddit": "/r/ElementCollection",
+        "sub_count": 10557,
+        "activity": "71/11/4",
+        "activity_rank": "Very Low",
+        "description": "A place for element collectors/chemical enthusiasts"
+      },
+      {
+        "subreddit": "/r/GreenChemistry",
+        "sub_count": 1,
+        "activity": "1/0/0",
+        "activity_rank": "Very Low",
+        "description": "greenchemistry"
+      },
+      {
+        "subreddit": "/r/HomeChemistry",
+        "sub_count": 13855,
+        "activity": "13/6/5",
+        "activity_rank": "Very Low",
+        "description": "On Creating a Lab in Your Home"
+      },
+      {
+        "subreddit": "/r/Medabolic",
+        "sub_count": 124,
+        "activity": "2/0/1",
+        "activity_rank": "Very Low",
+        "description": "TL;DR CHEMISTRY + MEDICINE"
+      },
+      {
+        "subreddit": "/r/OrganicChemistry",
+        "sub_count": 100139,
+        "activity": "20/9/13",
+        "activity_rank": "Low",
+        "description": "Synthetic Organic Chemistry"
+      },
+      {
+        "subreddit": "/r/URedditChemistry",
+        "sub_count": 304,
+        "activity": "14/1/5",
+        "activity_rank": "Very Low",
+        "description": "Information and Updates for General Chemistry on UReddit"
+      }
+    ],
+    "Physics": [
+      {
+        "subreddit": "/r/AdvancedTechResearch",
+        "sub_count": 390,
+        "activity": "1/0/5",
+        "activity_rank": "Very Low",
+        "description": "Advanced and Alternative Technology and Physics Research"
+      },
+      {
+        "subreddit": "/r/ALevelPhysics",
+        "sub_count": 5626,
+        "activity": "4/5/2",
+        "activity_rank": "Low",
+        "description": "A subreddit for the sharing of resources, links, and help for A-level Physics"
+      },
+      {
+        "subreddit": "/r/AltPhysics",
+        "sub_count": 21,
+        "activity": "1/0/0",
+        "activity_rank": "Very Low",
+        "description": "AltPhysics"
+      },
+      {
+        "subreddit": "/r/AP_Physics",
+        "sub_count": 3432,
+        "activity": "2/4/5",
+        "activity_rank": "Very Low",
+        "description": "AP_Physics"
+      },
+      {
+        "subreddit": "/r/APPhysics",
+        "sub_count": 7932,
+        "activity": "5/8/3",
+        "activity_rank": "Low",
+        "description": "Physics help/questions"
+      },
+      {
+        "subreddit": "/r/AskPhysics",
+        "sub_count": 1497798,
+        "activity": "14/23/363",
+        "activity_rank": "High",
+        "description": "Ask Physics"
+      },
+      {
+        "subreddit": "/r/Biophysics",
+        "sub_count": 14061,
+        "activity": "7/3/3",
+        "activity_rank": "Very Low",
+        "description": "Biophysics: Where physics meets biology"
+      },
+      {
+        "subreddit": "/r/BlacklightPower",
+        "sub_count": 30,
+        "activity": "2/2/0",
+        "activity_rank": "Very Low",
+        "description": "Blacklight Power"
+      },
+      {
+        "subreddit": "/r/CasualPhysics",
+        "sub_count": 101,
+        "activity": "1/0/3",
+        "activity_rank": "Very Low",
+        "description": "Physics for casual observer"
+      },
+      {
+        "subreddit": "/r/CMPhysics",
+        "sub_count": 82,
+        "activity": "2/0/0",
+        "activity_rank": "Very Low",
+        "description": "Condensed Matter Physics"
+      },
+      {
+        "subreddit": "/r/CoolPhysics",
+        "sub_count": 516,
+        "activity": "2/0/4",
+        "activity_rank": "Very Low",
+        "description": "Fun and Interesting Physics Stuff"
+      },
+      {
+        "subreddit": "/r/FluidMechanics",
+        "sub_count": 19350,
+        "activity": "6/6/9",
+        "activity_rank": "Very Low",
+        "description": "Fluid Mechanics: News, questions, and videos"
+      },
+      {
+        "subreddit": "/r/HealthPhysics",
+        "sub_count": 1410,
+        "activity": "6/7/1",
+        "activity_rank": "Very Low",
+        "description": "HealthPhysics"
+      },
+      {
+        "subreddit": "/r/HEP",
+        "sub_count": 84,
+        "activity": "1/0/3",
+        "activity_rank": "Very Low",
+        "description": "High Energy Physics"
+      },
+      {
+        "subreddit": "/r/HighSchoolPhysics",
+        "sub_count": 142,
+        "activity": "1/1/5",
+        "activity_rank": "Very Low",
+        "description": "Physics for high school students."
+      },
+      {
+        "subreddit": "/r/IBrokePhysics",
+        "sub_count": 204,
+        "activity": "8/1/2",
+        "activity_rank": "Very Low",
+        "description": "I Broke Physics"
+      },
+      {
+        "subreddit": "/r/Nano",
+        "sub_count": 3346,
+        "activity": "5/1/2",
+        "activity_rank": "Very Low",
+        "description": "Nanoscale physics and chemistry"
+      },
+      {
+        "subreddit": "/r/Neutrinos",
+        "sub_count": 552,
+        "activity": "3/1/3",
+        "activity_rank": "Very Low",
+        "description": "Neutrino Physics"
+      },
+      {
+        "subreddit": "/r/OpticalPhysics",
+        "sub_count": 104,
+        "activity": "1/0/0",
+        "activity_rank": "Very Low",
+        "description": "Optical Physics"
+      },
+      {
+        "subreddit": "/r/ParticlePhysics",
+        "sub_count": 36701,
+        "activity": "17/8/7",
+        "activity_rank": "Very Low",
+        "description": "Particle Physics"
+      },
+      {
+        "subreddit": "/r/Physics",
+        "sub_count": 3157585,
+        "activity": "103/22/164",
+        "activity_rank": "High",
+        "description": "Physics"
+      },
+      {
+        "subreddit": "/r/Physics_AWT",
+        "sub_count": 1217,
+        "activity": "3/31/3",
+        "activity_rank": "Very Low",
+        "description": "Physics AWT"
+      },
+      {
+        "subreddit": "/r/PhysicsBooks",
+        "sub_count": 7491,
+        "activity": "4/2/0",
+        "activity_rank": "Very Low",
+        "description": "Free physics textbooks"
+      },
+      {
+        "subreddit": "/r/PhysicsGifs",
+        "sub_count": 216334,
+        "activity": "420/16/11",
+        "activity_rank": "Very Low",
+        "description": "Physics GIFs"
+      },
+      {
+        "subreddit": "/r/PhysicsJokes",
+        "sub_count": 24028,
+        "activity": "61/3/6",
+        "activity_rank": "Very Low",
+        "description": "Jokes about Physics"
+      },
+      {
+        "subreddit": "/r/PhysicsMemes",
+        "sub_count": 319357,
+        "activity": "867/40/14",
+        "activity_rank": "Low",
+        "description": "Physics Memes"
+      },
+      {
+        "subreddit": "/r/PhysicsStudents",
+        "sub_count": 111647,
+        "activity": "16/8/15",
+        "activity_rank": "Very Low",
+        "description": "Physics Students"
+      },
+      {
+        "subreddit": "/r/Plasma",
+        "sub_count": 3012,
+        "activity": "4/2/1",
+        "activity_rank": "Very Low",
+        "description": "Plasma Physics"
+      },
+      {
+        "subreddit": "/r/Quantum",
+        "sub_count": 67449,
+        "activity": "21/10/7",
+        "activity_rank": "Very Low",
+        "description": "Quantum Mechanics - Physics Community"
+      },
+      {
+        "subreddit": "/r/QuantumFieldTheory",
+        "sub_count": 930,
+        "activity": "3/2/0",
+        "activity_rank": "Very Low",
+        "description": "Quantum Field Theory"
+      },
+      {
+        "subreddit": "/r/QuantumMechanics",
+        "sub_count": 11184,
+        "activity": "4/3/1",
+        "activity_rank": "Very Low",
+        "description": "Quantum Mechanics"
+      },
+      {
+        "subreddit": "/r/QuantumPhysics",
+        "sub_count": 60013,
+        "activity": "7/13/10",
+        "activity_rank": "Very Low",
+        "description": "Quantum Physics"
+      },
+      {
+        "subreddit": "/r/SpecialRelativity",
+        "sub_count": 149,
+        "activity": "1/5/1",
+        "activity_rank": "Very Low",
+        "description": "Special Relativity"
+      },
+      {
+        "subreddit": "/r/StringTheory",
+        "sub_count": 5430,
+        "activity": "7/3/3",
+        "activity_rank": "Very Low",
+        "description": "String Theory"
+      },
+      {
+        "subreddit": "/r/TheoreticalPhysics",
+        "sub_count": 36144,
+        "activity": "14/13/9",
+        "activity_rank": "Very Low",
+        "description": "Theoretical Physics"
+      },
+      {
+        "subreddit": "/r/Thermodynamics",
+        "sub_count": 15112,
+        "activity": "3/9/5",
+        "activity_rank": "Very Low",
+        "description": "Thermodynamics"
+      },
+      {
+        "subreddit": "/r/TheyDidThePhysics",
+        "sub_count": 198,
+        "activity": "15/3/2",
+        "activity_rank": "Very Low",
+        "description": "theydidthephysics"
+      }
+    ],
+    "Earth Sciences": [
+      {
+        "subreddit": "/r/aquaticecology",
+        "sub_count": 1182,
+        "activity": "5/1/4",
+        "activity_rank": "Very Low",
+        "description": "Aquatic Ecology"
+      },
+      {
+        "subreddit": "/r/climate",
+        "sub_count": 252164,
+        "activity": "140/9/37",
+        "activity_rank": "Very Low",
+        "description": "Information about the world's climate"
+      },
+      {
+        "subreddit": "/r/climate_science",
+        "sub_count": 20352,
+        "activity": "35/5/4",
+        "activity_rank": "Very Low",
+        "description": "Climate Change Science and News"
+      },
+      {
+        "subreddit": "/r/conservation",
+        "sub_count": 69224,
+        "activity": "91/4/11",
+        "activity_rank": "Low",
+        "description": "Conservation"
+      },
+      {
+        "subreddit": "/r/deep_ecology",
+        "sub_count": 5493,
+        "activity": "8/1/4",
+        "activity_rank": "Very Low",
+        "description": "Deep Ecology"
+      },
+      {
+        "subreddit": "/r/earthscience",
+        "sub_count": 25299,
+        "activity": "7/2/10",
+        "activity_rank": "Very Low",
+        "description": "Earth Science"
+      },
+      {
+        "subreddit": "/r/ecology",
+        "sub_count": 105303,
+        "activity": "77/18/16",
+        "activity_rank": "Low",
+        "description": "Ecology"
+      },
+      {
+        "subreddit": "/r/Energy",
+        "sub_count": 244454,
+        "activity": "200/24/81",
+        "activity_rank": "Average",
+        "description": "/r/Energy: News & Discussion"
+      },
+      {
+        "subreddit": "/r/Environment",
+        "sub_count": 1546635,
+        "activity": "170/6/52",
+        "activity_rank": "Average",
+        "description": "Environment"
+      },
+      {
+        "subreddit": "/r/Environmental_Science",
+        "sub_count": 71057,
+        "activity": "39/6/5",
+        "activity_rank": "Low",
+        "description": "Environmental Science"
+      },
+      {
+        "subreddit": "/r/FossilID",
+        "sub_count": 241058,
+        "activity": "105/7/19",
+        "activity_rank": "Low",
+        "description": "Fossil Identification"
+      },
+      {
+        "subreddit": "/r/geography",
+        "sub_count": 1093880,
+        "activity": "498/89/504",
+        "activity_rank": "High",
+        "description": "Geography"
+      },
+      {
+        "subreddit": "/r/geology",
+        "sub_count": 240044,
+        "activity": "146/15/30",
+        "activity_rank": "Average",
+        "description": "Geology! Before the World."
+      },
+      {
+        "subreddit": "/r/geologycareers",
+        "sub_count": 49686,
+        "activity": "25/13/7",
+        "activity_rank": "Low",
+        "description": "Geology Careers"
+      },
+      {
+        "subreddit": "/r/geophysics",
+        "sub_count": 9603,
+        "activity": "4/6/5",
+        "activity_rank": "Very Low",
+        "description": "Geophysics"
+      },
+      {
+        "subreddit": "/r/geopolitics",
+        "sub_count": 701369,
+        "activity": "133/38/170",
+        "activity_rank": "Average",
+        "description": "Geopolitics: Geopolitical news, analysis, & discussion"
+      },
+      {
+        "subreddit": "/r/glaciology",
+        "sub_count": 605,
+        "activity": "3/1/0",
+        "activity_rank": "Very Low",
+        "description": "Rivers of Ice"
+      },
+      {
+        "subreddit": "/r/globalclimatechange",
+        "sub_count": 5609,
+        "activity": "3/1/8",
+        "activity_rank": "Very Low",
+        "description": "GlobalClimateChange: How and Why Earth's Climate Changes"
+      },
+      {
+        "subreddit": "/r/groundwater",
+        "sub_count": 921,
+        "activity": "3/1/4",
+        "activity_rank": "Very Low",
+        "description": "Groundwater"
+      },
+      {
+        "subreddit": "/r/hydrogeology",
+        "sub_count": 2100,
+        "activity": "7/4/0",
+        "activity_rank": "Very Low",
+        "description": "Hydrogeology"
+      },
+      {
+        "subreddit": "/r/hydrology",
+        "sub_count": 14736,
+        "activity": "3/6/9",
+        "activity_rank": "Very Low",
+        "description": "Hydrology"
+      },
+      {
+        "subreddit": "/r/LavaPorn",
+        "sub_count": 18469,
+        "activity": "105/2/4",
+        "activity_rank": "Very Low",
+        "description": "LavaPorn"
+      },
+      {
+        "subreddit": "/r/MarineScience",
+        "sub_count": 2132,
+        "activity": "3/1/1",
+        "activity_rank": "Very Low",
+        "description": "Marine Science"
+      },
+      {
+        "subreddit": "/r/meteorology",
+        "sub_count": 58879,
+        "activity": "54/10/20",
+        "activity_rank": "Average",
+        "description": "meteorology: we all love the weather"
+      },
+      {
+        "subreddit": "/r/oceanography",
+        "sub_count": 12348,
+        "activity": "11/4/4",
+        "activity_rank": "Very Low",
+        "description": "oceanography: things about the sea"
+      },
+      {
+        "subreddit": "/r/paleoclimate",
+        "sub_count": 961,
+        "activity": "4/1/0",
+        "activity_rank": "Very Low",
+        "description": "Paleoclimatology & Paleoceanography"
+      },
+      {
+        "subreddit": "/r/palynology",
+        "sub_count": 445,
+        "activity": "4/2/2",
+        "activity_rank": "Very Low",
+        "description": "Pollen science"
+      },
+      {
+        "subreddit": "/r/prehistoriclife",
+        "sub_count": 37836,
+        "activity": "60/8/1",
+        "activity_rank": "Very Low",
+        "description": "Extinct Species"
+      },
+      {
+        "subreddit": "/r/restoration_ecology",
+        "sub_count": 13580,
+        "activity": "24/3/8",
+        "activity_rank": "Very Low",
+        "description": "Restoration Ecology"
+      },
+      {
+        "subreddit": "/r/Soil",
+        "sub_count": 15765,
+        "activity": "9/14/10",
+        "activity_rank": "Very Low",
+        "description": "r/soil - The Dirt on Dirt"
+      },
+      {
+        "subreddit": "/r/sustainability",
+        "sub_count": 884550,
+        "activity": "220/9/38",
+        "activity_rank": "Very Low",
+        "description": "Sustainability: The Capacity to Endure"
+      },
+      {
+        "subreddit": "/r/tropicalweather",
+        "sub_count": 152985,
+        "activity": "57/6/13",
+        "activity_rank": "Very Low",
+        "description": "Tropical Weather"
+      },
+      {
+        "subreddit": "/r/water",
+        "sub_count": 56417,
+        "activity": "61/16/21",
+        "activity_rank": "Low",
+        "description": "Water: policy, science, controversy, issues, hydrology"
+      },
+      {
+        "subreddit": "/r/weathergifs",
+        "sub_count": 292641,
+        "activity": "565/13/3",
+        "activity_rank": "Very Low",
+        "description": "Weather in Motion"
+      },
+      {
+        "subreddit": "/r/wetlands",
+        "sub_count": 3723,
+        "activity": "14/9/3",
+        "activity_rank": "Very Low",
+        "description": "Wetland ecology and conservation"
+      },
+      {
+        "subreddit": "/r/wildlifebiology",
+        "sub_count": 25748,
+        "activity": "39/13/7",
+        "activity_rank": "Low",
+        "description": "Wildlife Biology and Ecology"
+      }
+    ],
+    "Space Sciences": [
+      {
+        "subreddit": "/r/aerospace",
+        "sub_count": 105952,
+        "activity": "29/11/7",
+        "activity_rank": "Low",
+        "description": "aerospace: aviation, space, and related news"
+      },
+      {
+        "subreddit": "/r/askastronomy",
+        "sub_count": 118172,
+        "activity": "25/13/25",
+        "activity_rank": "Low",
+        "description": "Ask Astronomy"
+      },
+      {
+        "subreddit": "/r/Astrobiology",
+        "sub_count": 26534,
+        "activity": "9/4/10",
+        "activity_rank": "Very Low",
+        "description": "/r/Astrobiology: The study of life in the universe"
+      },
+      {
+        "subreddit": "/r/Astronomy",
+        "sub_count": 3004396,
+        "activity": "854/27/43",
+        "activity_rank": "Very Low",
+        "description": "Astronomy"
+      },
+      {
+        "subreddit": "/r/astrophotography",
+        "sub_count": 2630794,
+        "activity": "152/5/31",
+        "activity_rank": "Average",
+        "description": "Amateur Astrophotography"
+      },
+      {
+        "subreddit": "/r/blueorigin",
+        "sub_count": 40778,
+        "activity": "40/31/37",
+        "activity_rank": "Very Low",
+        "description": "Blue Origin's Subreddit"
+      },
+      {
+        "subreddit": "/r/cosmology",
+        "sub_count": 110538,
+        "activity": "16/20/12",
+        "activity_rank": "Low",
+        "description": "cosmology"
+      },
+      {
+        "subreddit": "/r/darksky",
+        "sub_count": 33314,
+        "activity": "109/3/9",
+        "activity_rank": "Very Low",
+        "description": "r/DarkSky - Enjoy the Stars!"
+      },
+      {
+        "subreddit": "/r/esa",
+        "sub_count": 31276,
+        "activity": "48/6/3",
+        "activity_rank": "Very Low",
+        "description": "European Space Agency"
+      },
+      {
+        "subreddit": "/r/exoplanets",
+        "sub_count": 12637,
+        "activity": "7/1/3",
+        "activity_rank": "Very Low",
+        "description": "exoplanets"
+      },
+      {
+        "subreddit": "/r/ImaginaryStarscapes",
+        "sub_count": 61991,
+        "activity": "61/1/7",
+        "activity_rank": "Very Low",
+        "description": "Imaginary Starscapes"
+      },
+      {
+        "subreddit": "/r/Mars",
+        "sub_count": 73995,
+        "activity": "94/37/3",
+        "activity_rank": "Low",
+        "description": "The Mars Subreddit"
+      },
+      {
+        "subreddit": "/r/moon",
+        "sub_count": 109645,
+        "activity": "138/4/7",
+        "activity_rank": "Low",
+        "description": "The Moon Subreddit"
+      },
+      {
+        "subreddit": "/r/nasa",
+        "sub_count": 5816324,
+        "activity": "396/21/38",
+        "activity_rank": "Low",
+        "description": "NASA"
+      },
+      {
+        "subreddit": "/r/RocketLab",
+        "sub_count": 31156,
+        "activity": "90/11/8",
+        "activity_rank": "Very Low",
+        "description": "Rocket Lab: Innovative Access to Space"
+      },
+      {
+        "subreddit": "/r/rocketry",
+        "sub_count": 72807,
+        "activity": "56/8/6",
+        "activity_rank": "Very Low",
+        "description": "Mission Control"
+      },
+      {
+        "subreddit": "/r/SETI",
+        "sub_count": 17139,
+        "activity": "12/11/5",
+        "activity_rank": "Very Low",
+        "description": "seti"
+      },
+      {
+        "subreddit": "/r/space",
+        "sub_count": 27835771,
+        "activity": "792/38/456",
+        "activity_rank": "Average",
+        "description": "/r/space: news, articles and discussion"
+      },
+      {
+        "subreddit": "/r/spaceengine",
+        "sub_count": 41131,
+        "activity": "37/4/9",
+        "activity_rank": "Average",
+        "description": "SpaceEngine"
+      },
+      {
+        "subreddit": "/r/spaceflight",
+        "sub_count": 293304,
+        "activity": "57/19/14",
+        "activity_rank": "Very Low",
+        "description": "Spaceflight news and discussion"
+      },
+      {
+        "subreddit": "/r/spaceporn",
+        "sub_count": 3977756,
+        "activity": "716/20/95",
+        "activity_rank": "High",
+        "description": "SpacePorn"
+      },
+      {
+        "subreddit": "/r/spacex",
+        "sub_count": 3690849,
+        "activity": "226/74/267",
+        "activity_rank": "Very Low",
+        "description": "r/SpaceX, the premier SpaceX discussion community"
+      },
+      {
+        "subreddit": "/r/telescopes",
+        "sub_count": 205952,
+        "activity": "74/15/40",
+        "activity_rank": "Low",
+        "description": "r/telescopes"
+      },
+      {
+        "subreddit": "/r/universe",
+        "sub_count": 33071,
+        "activity": "16/9/4",
+        "activity_rank": "Very Low",
+        "description": "Universe: Astronomy, Cosmology, Orbital Mechanics"
+      }
+    ]
+  },
+  "Life Sciences": {
+    "Biology": [
+      {
+        "subreddit": "/r/agingbiology",
+        "sub_count": 515,
+        "activity": "2/0/1",
+        "activity_rank": "Very Low",
+        "description": "memento mori"
+      },
+      {
+        "subreddit": "/r/ants",
+        "sub_count": 36648,
+        "activity": "12/5/12",
+        "activity_rank": "Very Low",
+        "description": "Ants!"
+      },
+      {
+        "subreddit": "/r/arachnids",
+        "sub_count": 12899,
+        "activity": "8/2/2",
+        "activity_rank": "Very Low",
+        "description": "All about Arachnida"
+      },
+      {
+        "subreddit": "/r/beetles",
+        "sub_count": 25620,
+        "activity": "155/4/6",
+        "activity_rank": "Low",
+        "description": "Beetles"
+      },
+      {
+        "subreddit": "/r/biohackers",
+        "sub_count": 500411,
+        "activity": "17/21/110",
+        "activity_rank": "High",
+        "description": "Biohackers - DIY Biology, Nutrigenomics, and Grinders"
+      },
+      {
+        "subreddit": "/r/bioinformatics",
+        "sub_count": 134318,
+        "activity": "11/7/45",
+        "activity_rank": "Low",
+        "description": "bioinformatics"
+      },
+      {
+        "subreddit": "/r/biology",
+        "sub_count": 5427675,
+        "activity": "101/34/54",
+        "activity_rank": "High",
+        "description": "Biology"
+      },
+      {
+        "subreddit": "/r/biologygifs",
+        "sub_count": 8398,
+        "activity": "23/1/0",
+        "activity_rank": "Very Low",
+        "description": "A place to show biological concepts!"
+      },
+      {
+        "subreddit": "/r/biotech",
+        "sub_count": 182400,
+        "activity": "46/16/64",
+        "activity_rank": "Average",
+        "description": "Biotech - Engineering Biology to Service Us"
+      },
+      {
+        "subreddit": "/r/deextinction",
+        "sub_count": 3477,
+        "activity": "22/8/2",
+        "activity_rank": "Very Low",
+        "description": "De-Extinction"
+      },
+      {
+        "subreddit": "/r/epigenetics",
+        "sub_count": 8120,
+        "activity": "5/3/3",
+        "activity_rank": "Very Low",
+        "description": "Molecular Biology and Genetics"
+      },
+      {
+        "subreddit": "/r/evolution",
+        "sub_count": 134939,
+        "activity": "45/37/16",
+        "activity_rank": "Low",
+        "description": "Evolution"
+      },
+      {
+        "subreddit": "/r/herpetology",
+        "sub_count": 157149,
+        "activity": "74/6/7",
+        "activity_rank": "Very Low",
+        "description": "Herpetology: The study of amphibians and reptiles"
+      },
+      {
+        "subreddit": "/r/mantids",
+        "sub_count": 41781,
+        "activity": "28/6/10",
+        "activity_rank": "Very Low",
+        "description": "Mantids: Care, Breeding, Photos, Discussions, Projects"
+      },
+      {
+        "subreddit": "/r/marinebiology",
+        "sub_count": 136524,
+        "activity": "132/9/5",
+        "activity_rank": "Very Low",
+        "description": "Marine Biology Subreddit"
+      },
+      {
+        "subreddit": "/r/microbiology",
+        "sub_count": 168422,
+        "activity": "27/8/15",
+        "activity_rank": "Low",
+        "description": "Microbiology"
+      },
+      {
+        "subreddit": "/r/neuroscience",
+        "sub_count": 165913,
+        "activity": "12/3/6",
+        "activity_rank": "Very Low",
+        "description": "Neuroscience: News and Discussions."
+      },
+      {
+        "subreddit": "/r/ornithology",
+        "sub_count": 362838,
+        "activity": "87/10/28",
+        "activity_rank": "Low",
+        "description": "Ornithology"
+      },
+      {
+        "subreddit": "/r/parasitology",
+        "sub_count": 67353,
+        "activity": "91/16/21",
+        "activity_rank": "Very Low",
+        "description": "Parasitology"
+      },
+      {
+        "subreddit": "/r/reptiles",
+        "sub_count": 217171,
+        "activity": "49/6/25",
+        "activity_rank": "High",
+        "description": "reptiles"
+      },
+      {
+        "subreddit": "/r/snakes",
+        "sub_count": 935883,
+        "activity": "263/11/59",
+        "activity_rank": "High",
+        "description": "Snakes"
+      },
+      {
+        "subreddit": "/r/spiders",
+        "sub_count": 928239,
+        "activity": "139/7/79",
+        "activity_rank": "High",
+        "description": "Spiders"
+      },
+      {
+        "subreddit": "/r/syntheticbiology",
+        "sub_count": 3038,
+        "activity": "5/3/3",
+        "activity_rank": "Very Low",
+        "description": "SyntheticBiology"
+      },
+      {
+        "subreddit": "/r/tarantulas",
+        "sub_count": 131689,
+        "activity": "44/9/21",
+        "activity_rank": "Very High",
+        "description": "Tarantulas: Everything about our favorite creepy crawlies"
+      },
+      {
+        "subreddit": "/r/whales",
+        "sub_count": 70879,
+        "activity": "299/11/6",
+        "activity_rank": "Very Low",
+        "description": "Mysticeti and Odontoceti"
+      },
+      {
+        "subreddit": "/r/wildlifebiology",
+        "sub_count": 25748,
+        "activity": "39/13/3",
+        "activity_rank": "Low",
+        "description": "Wildlife Biology and Ecology"
+      },
+      {
+        "subreddit": "/r/zoology",
+        "sub_count": 91905,
+        "activity": "159/15/42",
+        "activity_rank": "Low",
+        "description": "Zoology"
+      }
+    ]
+  },
+  "Social Sciences": {
+    "General Social Sciences": [
+      {
+        "subreddit": "/r/economics",
+        "sub_count": 5551375,
+        "activity": "532/64/488",
+        "activity_rank": "Average",
+        "description": "The Dismal Science"
+      },
+      {
+        "subreddit": "/r/psychology",
+        "sub_count": 4776265,
+        "activity": "498/56/42",
+        "activity_rank": "Low",
+        "description": "Psychology"
+      },
+      {
+        "subreddit": "/r/sociology",
+        "sub_count": 159456,
+        "activity": "58/41/12",
+        "activity_rank": "Low",
+        "description": "Sociology"
+      },
+      {
+        "subreddit": "/r/evopsych",
+        "sub_count": 14706,
+        "activity": "11/5/4",
+        "activity_rank": "Very Low",
+        "description": "Evolutionary Psychology / Sociobiology"
+      },
+      {
+        "subreddit": "/r/academicpsychology",
+        "sub_count": 163301,
+        "activity": "4/7/13",
+        "activity_rank": "Low",
+        "description": "AcademicPsychology: Where peer-reviewed psychology lives"
+      },
+      {
+        "subreddit": "/r/psychiatry",
+        "sub_count": 155305,
+        "activity": "45/23/13",
+        "activity_rank": "Low",
+        "description": "Psychiatry: medicine for the mind"
+      },
+      {
+        "subreddit": "/r/sexology",
+        "sub_count": 7238,
+        "activity": "5/3/1",
+        "activity_rank": "Very Low",
+        "description": "The Study of Sex and Everything to do with it."
+      },
+      {
+        "subreddit": "/r/iopsychology",
+        "sub_count": 35631,
+        "activity": "14/11/4",
+        "activity_rank": "Very Low",
+        "description": "Industrial Organizational Psychology"
+      },
+      {
+        "subreddit": "/r/psychologyofsex",
+        "sub_count": 100729,
+        "activity": "321/146/20",
+        "activity_rank": "Very Low",
+        "description": "Psychology of Sex"
+      },
+      {
+        "subreddit": "/r/relationship_science",
+        "sub_count": 2153,
+        "activity": "1/0/1",
+        "activity_rank": "Very Low",
+        "description": "Relationship Research and Science"
+      },
+      {
+        "subreddit": "/r/asksocialscience",
+        "sub_count": 176936,
+        "activity": "55/67/13",
+        "activity_rank": "Very Low",
+        "description": "AskSocialScience"
+      }
+    ],
+    "Anthropology": [
+      {
+        "subreddit": "/r/anthropology",
+        "sub_count": 167154,
+        "activity": "79/3/10",
+        "activity_rank": "Very Low",
+        "description": "Anthropology: The best 4 fields ever."
+      },
+      {
+        "subreddit": "/r/bioarchaeology",
+        "sub_count": 1286,
+        "activity": "3/1/5",
+        "activity_rank": "Very Low",
+        "description": "Bioarchaeology, Paleopathology & All Things Dead"
+      },
+      {
+        "subreddit": "/r/cogsci",
+        "sub_count": 128654,
+        "activity": "9/6/8",
+        "activity_rank": "Very Low",
+        "description": "cognitive science"
+      },
+      {
+        "subreddit": "/r/culinaryanthropology",
+        "sub_count": 635,
+        "activity": "2/1/2",
+        "activity_rank": "Very Low",
+        "description": "Culinary Anthropology"
+      },
+      {
+        "subreddit": "/r/culturalanthro",
+        "sub_count": 7850,
+        "activity": "4/3/1",
+        "activity_rank": "Very Low",
+        "description": "Because anthropology is not just dead people"
+      },
+      {
+        "subreddit": "/r/digitalanthro",
+        "sub_count": 3458,
+        "activity": "4/2/3",
+        "activity_rank": "Very Low",
+        "description": "Digital Anthropology"
+      },
+      {
+        "subreddit": "/r/forensicanthropology",
+        "sub_count": 1955,
+        "activity": "5/2/4",
+        "activity_rank": "Very Low",
+        "description": "Forensic Anthropology"
+      },
+      {
+        "subreddit": "/r/medicalanthropology",
+        "sub_count": 569,
+        "activity": "2/0/0",
+        "activity_rank": "Very Low",
+        "description": "Medical Anthropology"
+      },
+      {
+        "subreddit": "/r/paleoanthropology",
+        "sub_count": 6100,
+        "activity": "15/4/1",
+        "activity_rank": "Very Low",
+        "description": "paleoanthropology"
+      },
+      {
+        "subreddit": "/r/socialscience",
+        "sub_count": 48047,
+        "activity": "550/43/7",
+        "activity_rank": "Very Low",
+        "description": "Social Science"
+      },
+      {
+        "subreddit": "/r/sociology_academic",
+        "sub_count": 7574,
+        "activity": "4/3/0",
+        "activity_rank": "Very Low",
+        "description": "Academic discussion of sociology"
+      },
+      {
+        "subreddit": "/r/technoanthropology",
+        "sub_count": 654,
+        "activity": "2/0/2",
+        "activity_rank": "Very Low",
+        "description": "Technology Anthropology"
+      }
+    ],
+    "Archaeology": [
+      {
+        "subreddit": "/r/archaeology",
+        "sub_count": 234310,
+        "activity": "70/11/14",
+        "activity_rank": "Very Low",
+        "description": "Archaeology"
+      }
+    ]
+  },
+  "Applied Sciences": {
+    "General": [
+      {
+        "subreddit": "/r/askengineers",
+        "sub_count": 2661115,
+        "activity": "6/17/47",
+        "activity_rank": "Average",
+        "description": "AskEngineers: Stop nodding, start asking questions"
+      },
+      {
+        "subreddit": "/r/engineering",
+        "sub_count": 700686,
+        "activity": "64/26/35",
+        "activity_rank": "Very Low",
+        "description": "engineering"
+      },
+      {
+        "subreddit": "/r/engineeringporn",
+        "sub_count": 1324793,
+        "activity": "796/25/53",
+        "activity_rank": "Very Low",
+        "description": "Engineering Porn"
+      },
+      {
+        "subreddit": "/r/engineeringstudents",
+        "sub_count": 921790,
+        "activity": "47/15/77",
+        "activity_rank": "High",
+        "description": "EngineeringStudents: For those stuck doing math at 3am"
+      },
+      {
+        "subreddit": "/r/futurism",
+        "sub_count": 50780,
+        "activity": "82/23/7",
+        "activity_rank": "Very Low",
+        "description": "Futurism"
+      },
+      {
+        "subreddit": "/r/scientificresearch",
+        "sub_count": 7943,
+        "activity": "3/4/6",
+        "activity_rank": "Very Low",
+        "description": "Scientific Research"
+      },
+      {
+        "subreddit": "/r/sustainability",
+        "sub_count": 884554,
+        "activity": "220/9/25",
+        "activity_rank": "Very Low",
+        "description": "Sustainability: The Capacity to Endure"
+      }
+    ],
+    "Aerospace": [
+      {
+        "subreddit": "/r/aerospace",
+        "sub_count": 105954,
+        "activity": "29/11/7",
+        "activity_rank": "Low",
+        "description": "aerospace: aviation, space, and related news"
+      },
+      {
+        "subreddit": "/r/aviation",
+        "sub_count": 2367398,
+        "activity": "412/28/230",
+        "activity_rank": "High",
+        "description": "aviation"
+      },
+      {
+        "subreddit": "/r/aviationmaintenance",
+        "sub_count": 115010,
+        "activity": "53/21/20",
+        "activity_rank": "Low",
+        "description": "Aviation Maintenance: Est. 1903"
+      },
+      {
+        "subreddit": "/r/blueorigin",
+        "sub_count": 40780,
+        "activity": "40/31/16",
+        "activity_rank": "Very Low",
+        "description": "Blue Origin's Subreddit"
+      },
+      {
+        "subreddit": "/r/fighterjets",
+        "sub_count": 46519,
+        "activity": "112/19/16",
+        "activity_rank": "Average",
+        "description": "FighterJets"
+      },
+      {
+        "subreddit": "/r/flightsim",
+        "sub_count": 225193,
+        "activity": "45/7/66",
+        "activity_rank": "Very High",
+        "description": "r/flightsim - All flight sim related discussion"
+      },
+      {
+        "subreddit": "/r/flying",
+        "sub_count": 372976,
+        "activity": "55/34/176",
+        "activity_rank": "Very High",
+        "description": "Flying"
+      },
+      {
+        "subreddit": "/r/helicopters",
+        "sub_count": 391250,
+        "activity": "197/18/150",
+        "activity_rank": "Average",
+        "description": "Helicopters"
+      },
+      {
+        "subreddit": "/r/rocketlaunches",
+        "sub_count": 5282,
+        "activity": "6/2/1",
+        "activity_rank": "Very Low",
+        "description": "Rocket Launches"
+      },
+      {
+        "subreddit": "/r/rocketry",
+        "sub_count": 72811,
+        "activity": "56/8/7",
+        "activity_rank": "Very Low",
+        "description": "Mission Control"
+      },
+      {
+        "subreddit": "/r/space",
+        "sub_count": 27835836,
+        "activity": "806/38/374",
+        "activity_rank": "Average",
+        "description": "/r/space: news, articles and discussion"
+      },
+      {
+        "subreddit": "/r/spaceflight",
+        "sub_count": 293306,
+        "activity": "57/19/20",
+        "activity_rank": "Very Low",
+        "description": "Spaceflight news and discussion"
+      },
+      {
+        "subreddit": "/r/spacex",
+        "sub_count": 3690858,
+        "activity": "224/74/147",
+        "activity_rank": "Very Low",
+        "description": "r/SpaceX, the premier SpaceX discussion community"
+      },
+      {
+        "subreddit": "/r/xplane",
+        "sub_count": 29337,
+        "activity": "31/6/15",
+        "activity_rank": "High",
+        "description": "Unofficial X-Plane"
+      }
+    ],
+    "Agricultural": [
+      {
+        "subreddit": "/r/agriculture",
+        "sub_count": 50808,
+        "activity": "201/45/19",
+        "activity_rank": "Low",
+        "description": "The Agriculture reddit"
+      },
+      {
+        "subreddit": "/r/Agriscience",
+        "sub_count": 2319,
+        "activity": "3/0/4",
+        "activity_rank": "Very Low",
+        "description": "agriscience"
+      },
+      {
+        "subreddit": "/r/AgriTech",
+        "sub_count": 4056,
+        "activity": "2/2/1",
+        "activity_rank": "Very Low",
+        "description": "AgriTech"
+      },
+      {
+        "subreddit": "/r/Agronomy",
+        "sub_count": 8304,
+        "activity": "3/3/10",
+        "activity_rank": "Very Low",
+        "description": "The science and technology of using plants for food and fuel"
+      },
+      {
+        "subreddit": "/r/botany",
+        "sub_count": 178248,
+        "activity": "38/8/17",
+        "activity_rank": "Low",
+        "description": "Botany"
+      },
+      {
+        "subreddit": "/r/entomology",
+        "sub_count": 253524,
+        "activity": "65/6/21",
+        "activity_rank": "Very Low",
+        "description": "Entomology"
+      },
+      {
+        "subreddit": "/r/foodscience",
+        "sub_count": 56014,
+        "activity": "12/7/12",
+        "activity_rank": "Very Low",
+        "description": "Food Science"
+      },
+      {
+        "subreddit": "/r/Forestry",
+        "sub_count": 46920,
+        "activity": "23/15/7",
+        "activity_rank": "Low",
+        "description": "Planting trees, milling logs, and everything in between"
+      },
+      {
+        "subreddit": "/r/Gardening",
+        "sub_count": 8325061,
+        "activity": "497/32/247",
+        "activity_rank": "Very High",
+        "description": "Gardening, Plants, and Agriculture."
+      },
+      {
+        "subreddit": "/r/GMOFacts",
+        "sub_count": 2127,
+        "activity": "7/3/3",
+        "activity_rank": "Very Low",
+        "description": "A scientific view on GMOs"
+      },
+      {
+        "subreddit": "/r/Horticulture",
+        "sub_count": 54617,
+        "activity": "13/9/5",
+        "activity_rank": "Very Low",
+        "description": "Horticulture"
+      },
+      {
+        "subreddit": "/r/Hydro",
+        "sub_count": 94317,
+        "activity": "157/16/13",
+        "activity_rank": "High",
+        "description": "Hydroponics"
+      },
+      {
+        "subreddit": "/r/InvasiveSpecies",
+        "sub_count": 30656,
+        "activity": "28/13/12",
+        "activity_rank": "Average",
+        "description": "Invasive Species"
+      },
+      {
+        "subreddit": "/r/Microbiome",
+        "sub_count": 147286,
+        "activity": "16/12/16",
+        "activity_rank": "Low",
+        "description": "Microbiome"
+      },
+      {
+        "subreddit": "/r/mycology",
+        "sub_count": 788843,
+        "activity": "81/6/41",
+        "activity_rank": "Low",
+        "description": "mycology: mushroom hunting, fungi, myco-porn, cultivation"
+      },
+      {
+        "subreddit": "/r/Soil",
+        "sub_count": 15769,
+        "activity": "9/14/9",
+        "activity_rank": "Very Low",
+        "description": "r/soil - The Dirt on Dirt"
+      },
+      {
+        "subreddit": "/r/Water",
+        "sub_count": 56422,
+        "activity": "61/16/14",
+        "activity_rank": "Low",
+        "description": "Water: policy, science, controversy, issues, hydrology"
+      },
+      {
+        "subreddit": "/r/whatsthisplant",
+        "sub_count": 1500160,
+        "activity": "90/10/96",
+        "activity_rank": "Low",
+        "description": "What's This Plant"
+      }
+    ],
+    "Biological": [
+      {
+        "subreddit": "/r/bioengineering",
+        "sub_count": 23538,
+        "activity": "3/2/8",
+        "activity_rank": "Very Low",
+        "description": "Bioengineering and Biomedical Engineering"
+      },
+      {
+        "subreddit": "/r/biotech",
+        "sub_count": 182416,
+        "activity": "46/17/40",
+        "activity_rank": "Average",
+        "description": "Biotech - Engineering Biology to Service Us"
+      },
+      {
+        "subreddit": "/r/neuroscience",
+        "sub_count": 165912,
+        "activity": "13/3/7",
+        "activity_rank": "Very Low",
+        "description": "Neuroscience: News and Discussions."
+      },
+      {
+        "subreddit": "/r/systems_biology",
+        "sub_count": 1543,
+        "activity": "2/0/3",
+        "activity_rank": "Very Low",
+        "description": "Systems biology"
+      }
+    ],
+    "Biomedical": [
+      {
+        "subreddit": "/r/bioengineering",
+        "sub_count": 23538,
+        "activity": "3/2/8",
+        "activity_rank": "Very Low",
+        "description": "Bioengineering and Biomedical Engineering"
+      },
+      {
+        "subreddit": "/r/biomede",
+        "sub_count": 360,
+        "activity": "1/1/2",
+        "activity_rank": "Very Low",
+        "description": "Biomedical Engineering Technology"
+      },
+      {
+        "subreddit": "/r/biomedicalresearch",
+        "sub_count": 1578,
+        "activity": "2/0/1",
+        "activity_rank": "Very Low",
+        "description": "Interesting research in the field of Biomedical Engineering"
+      },
+      {
+        "subreddit": "/r/systems_biology",
+        "sub_count": 1543,
+        "activity": "2/0/6",
+        "activity_rank": "Very Low",
+        "description": "Systems biology"
+      }
+    ],
+    "Chemical": [
+      {
+        "subreddit": "/r/chemengstudents",
+        "sub_count": 435,
+        "activity": "4/6/1",
+        "activity_rank": "Very Low",
+        "description": "ChemEngStudents"
+      },
+      {
+        "subreddit": "/r/chemicalengineering",
+        "sub_count": 116338,
+        "activity": "21/9/13",
+        "activity_rank": "Very Low",
+        "description": "Chemical Engineering"
+      },
+      {
+        "subreddit": "/r/processengineering",
+        "sub_count": 15,
+        "activity": "1/0/0",
+        "activity_rank": "Very Low",
+        "description": "ProcessEngineering"
+      }
+    ],
+    "Civil": [
+      {
+        "subreddit": "/r/civilengineering",
+        "sub_count": 179941,
+        "activity": "143/34/30",
+        "activity_rank": "Average",
+        "description": "Civil Engineering"
+      },
+      {
+        "subreddit": "/r/engineeringstudents",
+        "sub_count": 921808,
+        "activity": "44/14/73",
+        "activity_rank": "Very High",
+        "description": "EngineeringStudents: For those stuck doing math at 3am"
+      },
+      {
+        "subreddit": "/r/engineering",
+        "sub_count": 700686,
+        "activity": "64/26/25",
+        "activity_rank": "Very Low",
+        "description": "engineering"
+      },
+      {
+        "subreddit": "/r/infrastructurist",
+        "sub_count": 24306,
+        "activity": "142/5/11",
+        "activity_rank": "Very Low",
+        "description": "/r/Infrastructurist: Infrastructure News and Ideas"
+      }
+    ],
+    "Computer Science / Engineering": [
+      {
+        "subreddit": "/r/arduino",
+        "sub_count": 707800,
+        "activity": "22/8/80",
+        "activity_rank": "High",
+        "description": "Arduino"
+      },
+      {
+        "subreddit": "/r/artificial",
+        "sub_count": 1089566,
+        "activity": "29/19/186",
+        "activity_rank": "High",
+        "description": "Artificial Intelligence (AI)"
+      },
+      {
+        "subreddit": "/r/chipdesign",
+        "sub_count": 34464,
+        "activity": "14/8/14",
+        "activity_rank": "Low",
+        "description": "Integrated Circuit Design/Manufacturing"
+      },
+      {
+        "subreddit": "/r/compsci",
+        "sub_count": 3991768,
+        "activity": "24/11/51",
+        "activity_rank": "Very Low",
+        "description": "Computer Science: Theory and Application"
+      },
+      {
+        "subreddit": "/r/computerengineering",
+        "sub_count": 50012,
+        "activity": "8/8/10",
+        "activity_rank": "Average",
+        "description": "Computer Engineering"
+      },
+      {
+        "subreddit": "/r/cscareerquestions",
+        "sub_count": 2254039,
+        "activity": "101/38/284",
+        "activity_rank": "High",
+        "description": "Computer Science Career Questions"
+      },
+      {
+        "subreddit": "/r/datascience",
+        "sub_count": 2672780,
+        "activity": "134/40/76",
+        "activity_rank": "Low",
+        "description": "Data Science"
+      },
+      {
+        "subreddit": "/r/machinelearning",
+        "sub_count": 2969859,
+        "activity": "28/14/225",
+        "activity_rank": "Average",
+        "description": "Machine Learning"
+      },
+      {
+        "subreddit": "/r/raspberry_pi",
+        "sub_count": 3220771,
+        "activity": "75/11/76",
+        "activity_rank": "Average",
+        "description": "Raspberry Pi"
+      },
+      {
+        "subreddit": "/r/robotics",
+        "sub_count": 278202,
+        "activity": "81/13/68",
+        "activity_rank": "Low",
+        "description": "Robotics"
+      }
+    ],
+    "Electrical": [
+      {
+        "subreddit": "/r/arduino",
+        "sub_count": 707800,
+        "activity": "22/8/98",
+        "activity_rank": "High",
+        "description": "Arduino"
+      },
+      {
+        "subreddit": "/r/askelectronics",
+        "sub_count": 854001,
+        "activity": "12/9/69",
+        "activity_rank": "High",
+        "description": "AskElectronics"
+      },
+      {
+        "subreddit": "/r/chipdesign",
+        "sub_count": 34464,
+        "activity": "14/8/16",
+        "activity_rank": "Low",
+        "description": "Integrated Circuit Design/Manufacturing"
+      },
+      {
+        "subreddit": "/r/ECE",
+        "sub_count": 212031,
+        "activity": "12/7/30",
+        "activity_rank": "Average",
+        "description": "Electrical and Computer Engineering"
+      },
+      {
+        "subreddit": "/r/electricalengineering",
+        "sub_count": 285917,
+        "activity": "40/11/54",
+        "activity_rank": "High",
+        "description": "Electrical Engineering"
+      },
+      {
+        "subreddit": "/r/electronics",
+        "sub_count": 1367303,
+        "activity": "348/30/51",
+        "activity_rank": "Very Low",
+        "description": "Electronic circuits at the component-level"
+      },
+      {
+        "subreddit": "/r/fpga",
+        "sub_count": 69402,
+        "activity": "18/9/19",
+        "activity_rank": "Low",
+        "description": "FPGA - everything about programmable hardware"
+      },
+      {
+        "subreddit": "/r/PLC",
+        "sub_count": 107568,
+        "activity": "32/17/22",
+        "activity_rank": "Low",
+        "description": "PLC - Programmable Logic Controllers"
+      },
+      {
+        "subreddit": "/r/printedcircuitboard",
+        "sub_count": 66064,
+        "activity": "18/11/18",
+        "activity_rank": "Low",
+        "description": "Official Printed Circuit Board (PCB) Subreddit"
+      },
+      {
+        "subreddit": "/r/raspberry_pi",
+        "sub_count": 3220772,
+        "activity": "74/11/78",
+        "activity_rank": "Average",
+        "description": "Raspberry Pi"
+      },
+      {
+        "subreddit": "/r/robotics",
+        "sub_count": 278202,
+        "activity": "81/13/74",
+        "activity_rank": "Low",
+        "description": "Robotics"
+      },
+      {
+        "subreddit": "/r/rtlsdr",
+        "sub_count": 115439,
+        "activity": "27/9/22",
+        "activity_rank": "Low",
+        "description": "Low-cost software defined radio community"
+      }
+    ],
+    "Fire Protection": [
+      {
+        "subreddit": "/r/calfire",
+        "sub_count": 4406,
+        "activity": "4/37/1",
+        "activity_rank": "Very Low",
+        "description": "California Department of Forestry and Fire Protection"
+      },
+      {
+        "subreddit": "/r/fireengineer",
+        "sub_count": 176,
+        "activity": "1/0/4",
+        "activity_rank": "Very Low",
+        "description": "fire protection engineering"
+      },
+      {
+        "subreddit": "/r/firepe",
+        "sub_count": 5019,
+        "activity": "4/7/2",
+        "activity_rank": "Very Low",
+        "description": "Fire Protection Engineering"
+      },
+      {
+        "subreddit": "/r/fireprotection",
+        "sub_count": 635,
+        "activity": "2/3/3",
+        "activity_rank": "Very Low",
+        "description": "Fire Protection (moved to /r/firePE)"
+      }
+    ],
+    "Genetic": [
+      {
+        "subreddit": "/r/23andme",
+        "sub_count": 145052,
+        "activity": "43/25/38",
+        "activity_rank": "Average",
+        "description": "r/23andMe"
+      },
+      {
+        "subreddit": "/r/agingbiology",
+        "sub_count": 515,
+        "activity": "2/0/5",
+        "activity_rank": "Very Low",
+        "description": "memento mori"
+      },
+      {
+        "subreddit": "/r/cryonics",
+        "sub_count": 4678,
+        "activity": "9/5/4",
+        "activity_rank": "Very Low",
+        "description": "Cryonics: Biostasis Through Cryopreservation"
+      },
+      {
+        "subreddit": "/r/genetic_algorithms",
+        "sub_count": 8616,
+        "activity": "9/3/8",
+        "activity_rank": "Very Low",
+        "description": "Genetic Algorithms"
+      },
+      {
+        "subreddit": "/r/genetics",
+        "sub_count": 125408,
+        "activity": "9/8/14",
+        "activity_rank": "Low",
+        "description": "Genetics, genes, and genomes"
+      },
+      {
+        "subreddit": "/r/gerontology",
+        "sub_count": 2147,
+        "activity": "3/1/0",
+        "activity_rank": "Very Low",
+        "description": "biological aspects of aging"
+      },
+      {
+        "subreddit": "/r/longevity",
+        "sub_count": 190910,
+        "activity": "111/9/18",
+        "activity_rank": "Very Low",
+        "description": "Live better longer."
+      },
+      {
+        "subreddit": "/r/transhumanism",
+        "sub_count": 90058,
+        "activity": "18/15/21",
+        "activity_rank": "Low",
+        "description": "Transhumanism - Superintelligence, Superlongevity"
+      }
+    ],
+    "Industrial": [
+      {
+        "subreddit": "/r/controltheory",
+        "sub_count": 38282,
+        "activity": "25/8/17",
+        "activity_rank": "Very Low",
+        "description": "Control Theory"
+      },
+      {
+        "subreddit": "/r/machinelearning",
+        "sub_count": 2969861,
+        "activity": "28/14/243",
+        "activity_rank": "Average",
+        "description": "Machine Learning"
+      },
+      {
+        "subreddit": "/r/PLC",
+        "sub_count": 107569,
+        "activity": "32/17/22",
+        "activity_rank": "Low",
+        "description": "PLC - Programmable Logic Controllers"
+      },
+      {
+        "subreddit": "/r/processcontrol",
+        "sub_count": 3027,
+        "activity": "3/3/5",
+        "activity_rank": "Very Low",
+        "description": "Process Control"
+      },
+      {
+        "subreddit": "/r/robotics",
+        "sub_count": 278204,
+        "activity": "81/13/80",
+        "activity_rank": "Low",
+        "description": "Robotics"
+      }
+    ],
+    "Mechanical": [
+      {
+        "subreddit": "/r/cad",
+        "sub_count": 60389,
+        "activity": "6/11/12",
+        "activity_rank": "Very Low",
+        "description": "CAD - Computer Aided Design"
+      },
+      {
+        "subreddit": "/r/machineporn",
+        "sub_count": 1543792,
+        "activity": "337/12/16",
+        "activity_rank": "Very Low",
+        "description": "MachinePorn"
+      },
+      {
+        "subreddit": "/r/machinists",
+        "sub_count": 244282,
+        "activity": "139/29/42",
+        "activity_rank": "High",
+        "description": "Machinists"
+      },
+      {
+        "subreddit": "/r/manufacturing",
+        "sub_count": 70797,
+        "activity": "15/12/8",
+        "activity_rank": "Very Low",
+        "description": "News from the manufacturing industry"
+      },
+      {
+        "subreddit": "/r/solidworks",
+        "sub_count": 100165,
+        "activity": "24/10/24",
+        "activity_rank": "Average",
+        "description": "Learning community for all things SOLIDWORKS."
+      }
+    ],
+    "Mining": [
+      {
+        "subreddit": "/r/asteroidmining",
+        "sub_count": 1627,
+        "activity": "6/3/2",
+        "activity_rank": "Very Low",
+        "description": "Asteroid Mining"
+      },
+      {
+        "subreddit": "/r/mining",
+        "sub_count": 46886,
+        "activity": "12/13/34",
+        "activity_rank": "Low",
+        "description": "Mining"
+      },
+      {
+        "subreddit": "/r/oil",
+        "sub_count": 36115,
+        "activity": "244/42/19",
+        "activity_rank": "Very Low",
+        "description": "Oil, gas, and other products"
+      },
+      {
+        "subreddit": "/r/oilandgasworkers",
+        "sub_count": 43589,
+        "activity": "5/12/9",
+        "activity_rank": "Average",
+        "description": "Oil and Gas Life"
+      },
+      {
+        "subreddit": "/r/prospecting",
+        "sub_count": 56236,
+        "activity": "52/13/10",
+        "activity_rank": "Very Low",
+        "description": "Gold Prospecting"
+      },
+      {
+        "subreddit": "/r/spaceresources",
+        "sub_count": 629,
+        "activity": "4/0/1",
+        "activity_rank": "Very Low",
+        "description": "Mining in Space!"
+      }
+    ],
+    "Nuclear Operations Research": [
+      {
+        "subreddit": "/r/nuclear",
+        "sub_count": 70875,
+        "activity": "78/20/57",
+        "activity_rank": "Low",
+        "description": "Nuclear"
+      },
+      {
+        "subreddit": "/r/nuclearenergy",
+        "sub_count": 3327,
+        "activity": "9/1/5",
+        "activity_rank": "Very Low",
+        "description": "NuclearEnergy"
+      },
+      {
+        "subreddit": "/r/nuclearpower",
+        "sub_count": 46368,
+        "activity": "19/20/15",
+        "activity_rank": "Low",
+        "description": "Nuclear Power"
+      }
+    ],
+    "Robotics": [
+      {
+        "subreddit": "/r/artificial",
+        "sub_count": 1089572,
+        "activity": "28/19/159",
+        "activity_rank": "High",
+        "description": "Artificial Intelligence (AI)"
+      },
+      {
+        "subreddit": "/r/controltheory",
+        "sub_count": 38282,
+        "activity": "25/8/19",
+        "activity_rank": "Very Low",
+        "description": "Control Theory"
+      },
+      {
+        "subreddit": "/r/machinelearning",
+        "sub_count": 2969863,
+        "activity": "28/14/248",
+        "activity_rank": "Average",
+        "description": "Machine Learning"
+      },
+      {
+        "subreddit": "/r/PLC",
+        "sub_count": 107569,
+        "activity": "32/17/26",
+        "activity_rank": "Low",
+        "description": "PLC - Programmable Logic Controllers"
+      },
+      {
+        "subreddit": "/r/robotics",
+        "sub_count": 278204,
+        "activity": "81/13/79",
+        "activity_rank": "Low",
+        "description": "Robotics"
+      }
+    ],
+    "Software": [
+      {
+        "subreddit": "/r/computerengineering",
+        "sub_count": 50012,
+        "activity": "8/8/11",
+        "activity_rank": "Average",
+        "description": "Computer Engineering"
+      },
+      {
+        "subreddit": "/r/softwareengineering",
+        "sub_count": 143117,
+        "activity": "47/27/22",
+        "activity_rank": "Very Low",
+        "description": "Software Engineering"
+      }
+    ],
+    "Web": [
+      {
+        "subreddit": "/r/askwebengineering",
+        "sub_count": 143,
+        "activity": "1/0/2",
+        "activity_rank": "Very Low",
+        "description": "subreddit for building web architecture, infrastructure"
+      }
+    ],
+    "Healthcare": [
+      {
+        "subreddit": "/r/askvet",
+        "sub_count": 333499,
+        "activity": "7/5/50",
+        "activity_rank": "High",
+        "description": "Ask Veterinary Related Questions"
+      },
+      {
+        "subreddit": "/r/dentistry",
+        "sub_count": 145170,
+        "activity": "16/21/42",
+        "activity_rank": "High",
+        "description": "Dentistry"
+      },
+      {
+        "subreddit": "/r/emergencymedicine",
+        "sub_count": 121011,
+        "activity": "98/47/24",
+        "activity_rank": "Average",
+        "description": "Emergency Medicine"
+      },
+      {
+        "subreddit": "/r/epidemiology",
+        "sub_count": 25558,
+        "activity": "36/9/6",
+        "activity_rank": "Very Low",
+        "description": "Epidemiology"
+      },
+      {
+        "subreddit": "/r/familymedicine",
+        "sub_count": 59737,
+        "activity": "70/38/19",
+        "activity_rank": "Average",
+        "description": "Family Medicine"
+      },
+      {
+        "subreddit": "/r/medicine",
+        "sub_count": 515670,
+        "activity": "316/80/85",
+        "activity_rank": "Low",
+        "description": "/r/medicine: a subreddit for medical professionals"
+      },
+      {
+        "subreddit": "/r/medlabprofessionals",
+        "sub_count": 107658,
+        "activity": "57/10/27",
+        "activity_rank": "High",
+        "description": "Medical Laboratory Science"
+      },
+      {
+        "subreddit": "/r/pharmacology",
+        "sub_count": 31021,
+        "activity": "5/3/7",
+        "activity_rank": "Very Low",
+        "description": "pharmacology"
+      },
+      {
+        "subreddit": "/r/psychedelictherapy",
+        "sub_count": 29920,
+        "activity": "6/10/2",
+        "activity_rank": "Low",
+        "description": "Psychedelic Therapy"
+      },
+      {
+        "subreddit": "/r/publichealth",
+        "sub_count": 143909,
+        "activity": "222/25/20",
+        "activity_rank": "Average",
+        "description": "Public Health"
+      },
+      {
+        "subreddit": "/r/sportsmedicine",
+        "sub_count": 8746,
+        "activity": "4/2/5",
+        "activity_rank": "Very Low",
+        "description": "Sports Medicine"
+      },
+      {
+        "subreddit": "/r/veterinary",
+        "sub_count": 73664,
+        "activity": "13/10/5",
+        "activity_rank": "Low",
+        "description": "Veterinary community news"
+      },
+      {
+        "subreddit": "/r/veterinaryschool",
+        "sub_count": 18872,
+        "activity": "6/8/5",
+        "activity_rank": "Average",
+        "description": "For veterinary students from around the world"
+      }
+    ]
+  },
+  "Other": {
+    "Other": [
+      {
+        "subreddit": "/r/UFOstudies",
+        "sub_count": 920,
+        "activity": "10/3/6",
+        "activity_rank": "Very Low",
+        "description": "UFOstudies"
+      },
+      {
+        "subreddit": "/r/AcademicUAP",
+        "sub_count": 3834,
+        "activity": "9/3/1",
+        "activity_rank": "Very Low",
+        "description": "Academic Studies of UAP"
+      },
+      {
+        "subreddit": "/r/Wikipedia",
+        "sub_count": 611000,
+        "activity": null,
+        "activity_rank": null,
+        "description": "Wikipedia content, sometimes science-related"
+      },
+      {
+        "subreddit": "/r/Open_Science",
+        "sub_count": 11000,
+        "activity": null,
+        "activity_rank": null,
+        "description": "For all things open science"
+      },
+      {
+        "subreddit": "/r/metaresearch",
+        "sub_count": 667,
+        "activity": null,
+        "activity_rank": null,
+        "description": "Meta-research"
+      },
+      {
+        "subreddit": "/r/OpenAccess",
+        "sub_count": 1200,
+        "activity": null,
+        "activity_rank": null,
+        "description": "Open Access publishing"
+      },
+      {
+        "subreddit": "/r/HotScienceNews",
+        "sub_count": 14000,
+        "activity": null,
+        "activity_rank": null,
+        "description": "Hot science news"
+      }
+    ]
+  },
+  "Philosophy & History": {
+    "Philosophy & History": [
+      {
+        "subreddit": "/r/citizenscience",
+        "sub_count": 3903,
+        "activity": "4/1/5",
+        "activity_rank": "Very Low",
+        "description": "Participatory Science"
+      },
+      {
+        "subreddit": "/r/citizenscientists",
+        "sub_count": 188,
+        "activity": "2/0/1",
+        "activity_rank": "Very Low",
+        "description": "The Reddit Citizen Scientist Network"
+      },
+      {
+        "subreddit": "/r/fringephysics",
+        "sub_count": 2705,
+        "activity": "5/3/5",
+        "activity_rank": "Very Low",
+        "description": "Fringe Physics"
+      },
+      {
+        "subreddit": "/r/fringescience",
+        "sub_count": 6278,
+        "activity": "1/0/4",
+        "activity_rank": "Very Low",
+        "description": "Fringe Science"
+      },
+      {
+        "subreddit": "/r/msresearch",
+        "sub_count": 226,
+        "activity": "1/1/4",
+        "activity_rank": "Very Low",
+        "description": "Ongoing basic science research on Multiple Sclerosis"
+      },
+      {
+        "subreddit": "/r/neurophilosophy",
+        "sub_count": 40699,
+        "activity": "3/2/2",
+        "activity_rank": "Very Low",
+        "description": "Neuroscience, psychology and philosophy of mind"
+      },
+      {
+        "subreddit": "/r/philosophyofmath",
+        "sub_count": 15038,
+        "activity": "5/9/3",
+        "activity_rank": "Very Low",
+        "description": "Philosophy of Mathematics"
+      },
+      {
+        "subreddit": "/r/phrenology",
+        "sub_count": 225,
+        "activity": "9/2/3",
+        "activity_rank": "Very Low",
+        "description": "Phrenology"
+      },
+      {
+        "subreddit": "/r/pseudoscience",
+        "sub_count": 1598,
+        "activity": "7/5/3",
+        "activity_rank": "Very Low",
+        "description": "Pseudoscience"
+      },
+      {
+        "subreddit": "/r/pseudosciences",
+        "sub_count": 42,
+        "activity": "1/0/2",
+        "activity_rank": "Very Low",
+        "description": "A Place to post about Pseudosciences, promote actual science"
+      },
+      {
+        "subreddit": "/r/sciencepolicy",
+        "sub_count": 1400,
+        "activity": "3/0/4",
+        "activity_rank": "Very Low",
+        "description": "Science, research, funding and application to public policy"
+      },
+      {
+        "subreddit": "/r/tifr",
+        "sub_count": 212,
+        "activity": "4/1/0",
+        "activity_rank": "Very Low",
+        "description": "Tata Institute of Fundamental Research"
+      }
+    ]
+  }
+}

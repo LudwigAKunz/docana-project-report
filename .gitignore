@@ -1,3 +1,10 @@
+# corpus dataset, checkpoint data and final dataset after feature engineering (too large; corpus dataset is required, other datasets can be constructed via the uploaded notebooks)
+
+data/raw/*
+data/checkpoints/checkpoint*
+data/data_final_features.pkl
+data/science_sample_balanced.pkl
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
