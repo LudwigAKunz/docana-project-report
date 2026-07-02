@@ -101,14 +101,14 @@ Summarize the major outcomes of your project, reflect on the research findings, 
 | ...          | ...                                                       |
 
 ## References
-De Smedt, T. & Daelemans, W. (2012). Pattern for Python. Journal of Machine Learning Research, 13, 2063–2067
-Honnibal, M., & Montani, I. (2017). spaCy: Industrial-strength Natural Language Processing [Software]. Explosion AI. https://spacy.io
+- De Smedt, T. & Daelemans, W. (2012). Pattern for Python. Journal of Machine Learning Research, 13, 2063–2067
+- Honnibal, M., & Montani, I. (2017). spaCy: Industrial-strength Natural Language Processing [Software]. Explosion AI. https://spacy.io
 Hutto, C., & Gilbert, E. (2014). VADER: A Parsimonious Rule-Based Model for Sentiment Analysis of Social Media Text. Proceedings of the International AAAI Conference on Web and Social Media, 8(1), 216–225. https://doi.org/10.1609/icwsm.v8i1.14550
-Loria, S. (2013). TextBlob [Software]. GitHub. https://github.com/sloria/TextBlob
-Nguyen, S.T. (2018). better-profanity [Software]. GitHub. https://github.com/snguyenthanh/better_profanity
-Reimers, N. & Gurevych, I. (2019). Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks. In Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing, Hong Kong.
-Völske, M. et al. (2017). TL;DR: Mining Reddit to Learn Automatic Summarization. In Proceedings of the Workshop on New Frontiers in Summarization, 59–63, Copenhagen, Denmark. Association for Computational Linguistics.
-Wang, W. et al. (2020). all-MiniLM-L6-v2 [Model]. HuggingFace. https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
+- Loria, S. (2013). TextBlob [Software]. GitHub. https://github.com/sloria/TextBlob
+- Nguyen, S.T. (2018). better-profanity [Software]. GitHub. https://github.com/snguyenthanh/better_profanity
+- Reimers, N. & Gurevych, I. (2019). Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks. In Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing, Hong Kong.
+- Völske, M. et al. (2017). TL;DR: Mining Reddit to Learn Automatic Summarization. In Proceedings of the Workshop on New Frontiers in Summarization, 59–63, Copenhagen, Denmark. Association for Computational Linguistics.
+- Wang, W. et al. (2020). all-MiniLM-L6-v2 [Model]. HuggingFace. https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 
 
 
