@@ -96,9 +96,9 @@ Summarize the major outcomes of your project, reflect on the research findings, 
 
 | Team Member  | Contributions                                             |
 |--------------|-----------------------------------------------------------|
-| Alice Smith  | Data collection, preprocessing, model training, evaluation|                                                       |
-| Bob Johnson  | ...                                                       |
-| ...          | ...                                                       |
+| Ludwig Kunz  | Data collection, model building, visualization |                                                       |
+| Robert Seidel  | Feature engineering                                                       |
+| Marco Stöhr          | Feature engineering, model building                                                        |
 
 ## References
 - De Smedt, T. & Daelemans, W. (2012). Pattern for Python. Journal of Machine Learning Research, 13, 2063–2067
