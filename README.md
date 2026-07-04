@@ -104,6 +104,14 @@ Report how you conducted the experiments. We suggest including detailed explanat
 
 ## Results and Discussion
 
+| Model           | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
+|---------------|:--------:|:---------:|:------:|:--------:|:-------:|
+| *Logit (Summary)* | 0.656    | 0.634     | 0.723  | 0.675    | 0.708   |
+| *Logit (Content)* | 0.75     | 0.75      | 0.742  | 0.746    | 0.825   |
+| *Logit (full)*    | 0.755    | 0.755     | 0.747  | 0.751    | 0.832   |
+| *BERT (Content)*  | 0.95     | 0.946     | 0.954  | 0.95     | 0.989   |
+| *BERT (Summary)*  | 0.86     | 0.804     | 0.952  | 0.872    | 0.946   |
+
 
 
 ## Conclusion
