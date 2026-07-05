@@ -32,11 +32,11 @@ Reddit is a large social media platform organized into topic-specific communitie
 formal, informational end of this spectrum, whereas everyday social media discourse tends toward more informal, personally biased involved language use. This raises the question of whether science-related subreddits exhibit systematically different linguistic patterns compared to non-science subreddits? In particular regarding readability, self-reference, affective language, and lexical register, and whether these differences already emerge in short TL;DR summaries or only in the original posts. We investigate this by comparing content and summary texts from a balanced sample of science and non-science subreddits using a set of manually constructed linguistic features, and by testing how well these features predict a post's subreddit category. 
 
 ## Dataset & Dataset Construction
-The corpus used for analysis is the Webis-TLDR-17 dataset [webis/tldr-17](https://huggingface.co/datasets/webis/tldr-17), introduced by Völske et al. (2017), who mined Reddit posts and their authror written TL;DR summaries for automatic summarization research. The full corpus comprises 29,651 unique subreddits. 
+The corpus used for analysis is the Webis-TLDR-17 dataset [webis/tldr-17](https://huggingface.co/datasets/webis/tldr-17), introduced by Völske et al. (2017), who mined Reddit posts and their author-written TL;DR summaries for automatic summarization research. The full corpus comprises 29,651 unique subreddits. 
 We began by identifying science-related content. Therefore, we compiled a reference list of 365 science subreddits (spanning 8 topic areas and 32 subtopics) from the r/ScienceSubreddits community wiki. Matching this list against the subreddits present in the corpus, we identified 132 science subreddits, contributing 41,832 posts. To construct a balanced binary classification task, we randomly sampled an equal number of posts (41,832) from the remaining 3,806,498
 non-science posts (seed=42), yielding a balanced sample of 83,664 posts.
-The data cleaning process involved the removal of duplicate content, posts with implausible readability score (Flesch-Kincaid Grade ≥ 30, indicating markup/list artifacts), summaries shorter than 3 words, and posts with a low alphabetic-character ratio (<0.5). The final dataset consists of 79,179 posts of which 50.5% are non-science related and, 49.5% are science related. Dataset balance was
-preserved throughout the cleaning process. On average, content posts comprise 295 words (median 207, max 6,308) and summaries 33 words (median 21, max 2,576), corresponding to a mean compression ratio of 0.157 (median 0.108).
+The data cleaning process involved the removal of duplicate content, posts with implausible readability score (Flesch-Kincaid Grade ≥ 30, indicating markup/list artifacts), summaries shorter than 3 words, and posts with a low alphabetic-character ratio (<0.5). The final dataset consists of 79,179 posts of which 50.5% are non-science related and 49.5% are science related. Dataset balance was
+preserved throughout the cleaning process. On average, content posts comprise *M* = 295 words (*Mdn* = 207, max = 6,308) and summaries *M* = 33 words (*Mdn* = 21, max = 2,576), corresponding to a mean compression ratio of *M* = 0.157 (*Mdn* = 0.108).
 
 ![Top 10 Subreddits by Post Share](figures/top10_subreddits.png)
 *Figure 1: Share of posts contributed by the ten most frequent subreddits, separately for science and non-science subreddits.*
@@ -53,7 +53,7 @@ conda create --name myenv python=3.13.9
 conda activate myenv
 pip install -r requirements.txt
 ```
-The full dataset (`corpus-webis-tldr-17.json`) is too large to be uploaded on github. It can be retrieved here [link] and should be put into `data/raw` to run the code. `science_subreddits.json` is also required to replicate the analysis. All further necessary datasets will be created by the notebooks, if run in the correct order:
+The full dataset (`corpus-webis-tldr-17.json`) is too large to be uploaded on github. It can be retrieved [here](https://huggingface.co/datasets/webis/tldr-17) and should be put into `data/raw` to run the code. `science_subreddits.json` is also required to replicate the analysis. All further necessary datasets will be created by the notebooks, if run in the correct order:
 
 - `sci_subreddits_sampling.ipynb` reads the extracted science subreddits and creates a balanced sample of science and non-science subreddits
 - `feature_engineering.ipynb` cleans the data and extracts the features used in the logistic regressions
@@ -63,7 +63,7 @@ The full dataset (`corpus-webis-tldr-17.json`) is too large to be uploaded on gi
 
 
 ### Feature Engineering
-To investigate the linguistic properties of the Reddit comments and their respective TL;DR summaries, we computed a set of features across seven categories: readability, compression ratio, profanity, sentiment, subjectivity, named entity retention, and pronoun usage. All features were computed seperately for the original comment (content column) and the corresponding summary, which also allowed us the inspect both absolute values and relative differences between two texts.
+To investigate the linguistic properties of the Reddit comments and their respective TL;DR summaries, we computed a set of features across seven categories: readability, compression ratio, profanity, sentiment, subjectivity, named entity retention, and pronoun usage. All features were computed separately for the original comment (content column) and the corresponding summary, which also allowed us to inspect both absolute values and relative differences between two texts.
 Some of the features are known for their lack of capacity to detect sarcasm and irony (e.g. VADER or better_profanity). In order to balance precision and output of the scores, we still relied on simpler and more intuitive (and therefore more interpretable models). 
 
 #### Cosine Similarity
@@ -91,19 +91,19 @@ Sentiment was measured using VADER (Valence Aware Dictionary and sEntiment Reaso
 Subjectivity scores were computed using TextBlob (Loria, 2013), which draws on the Pattern lexicon (De Smedt & Daelemans, 2012) to assign each word a manually annotated subjectivity score between 0 and 1, where 0 represents objective factual language and 1 represents strongly subjective opinion language. The document-level score is computed as a weighted average over all lexicon-matched words. A relevant limitation for our dataset is that scientific intensifiers such as "significantly" or "strongly" may be scored as subjective despite occurring in factual contexts, potentially biasing subjectivity scores upward for science-domain content.
 
 #### Named Entity Retention Rate
-To assess how faithfully TL;DR summaries preserve the informational content of the original comment, we computed an Entity Retention Rate (ERR). Named entities were extracted from both content and summary using spaCy (Honnibal & Montani, 2017). The ERR is defined as the proportion of entities identified in the content that also appear in the summary. A score of 0 indicates that no entities were retained, while a score of 1 indicates complete retention. Comments containing no named entities were assigned the median ERR of the dataset. This strict exact-match approach proved conservative in practice (the median ERR was 0.0) suggesting that TL;DR authors rarely reproduce entity mentions verbatism.
+To assess how faithfully TL;DR summaries preserve the informational content of the original comment, we computed an Entity Retention Rate (ERR). Named entities were extracted from both content and summary using spaCy (Honnibal & Montani, 2017). The ERR is defined as the proportion of entities identified in the content that also appear in the summary. A score of 0 indicates that no entities were retained, while a score of 1 indicates complete retention. Comments containing no named entities were assigned the median ERR of the dataset. This strict exact-match approach proved conservative in practice (the median ERR was 0.0) suggesting that TL;DR authors rarely reproduce entity mentions verbatim.
 
 #### Pronoun Usage
 By hypothesizing that personal, self-referential language is more common in
 non-science subreddits, we measured the rate of first-person singular
 pronouns (I, me, my, mine, myself) that is commonly referred to as "I-words" in
 language research (Pennebaker & King, 1999), and was implemented via regular expression matching. This is deliberately narrower than personal pronouns in the
-grammatical sense, which would also include we/you/he/she/they. Both the content and summary pronoun rate showed similar means (content m = 0.049; summary m = 0.039) but differed in their medians. The summary pronoun rate median is 0, indicating that more than half of the summaries contain no first-person singular pronoun at all. This is consistent with the expectation that summaries adopt a more neutral, less personal register.
+grammatical sense, which would also include we/you/he/she/they. Both the content and summary pronoun rate showed similar means (content *M* = 0.049; summary *M* = 0.039) but differed in their medians. The summary pronoun rate median is 0, indicating that more than half of the summaries contain no first-person singular pronoun at all. This is consistent with the expectation that summaries adopt a more neutral, less personal register.
 
 ### Statistical Analysis
-Prior to the model building, all features were standardized (mean = 0, sd = 1) to ensure comparable coefficent magnitudes. Statistical analysis was conducted at α = 0.05. We then checked pairwise correlations among all engineered features to identify redundancy and potential multicollinearity.
+Prior to the model building, all features were standardized (*M* = 0, *SD* = 1) to ensure comparable coefficient magnitudes. Statistical analysis was conducted at α = 0.05. We then checked pairwise correlations among all engineered features to identify redundancy and potential multicollinearity.
 
-We modeled subreddit category science vs non-science using logistic regression comparing three feature sets: content-only, summary-only, and a coombined full model including content and summary with cosine similarity and entity retention rate. Predictive performance was evaluated via 10-fold stratified cross-validation, while preserving class balance in every fold using scikit-learn's LogisticRegression (lbfgs solver, L2 penalty, max_iter=1000), reporting accuracy, precision, recall, F1, and ROC-AUC as means across folds.
+We modeled subreddit category science vs non-science using logistic regression comparing three feature sets: content-only, summary-only, and a combined full model including content and summary with cosine similarity and entity retention rate. Predictive performance was evaluated via 10-fold stratified cross-validation, while preserving class balance in every fold using scikit-learn's LogisticRegression (lbfgs solver, L2 penalty, max_iter=1000), reporting accuracy, precision, recall, F1, and ROC-AUC as means across folds.
 To interpret feature contributions, we additionally fit standardized logistic regression models (statsmodels, Newton-Raphson MLE, converged within 6 iterations for all three feature sets) on the full sample, reporting coefficients with 95% confidence intervals and p-values. Furthermore, we compared the full model to both individual models via Likelihood Ratio test to investigate, if the full model does show significant explanatory power.
 
 ### BERT classification
@@ -118,7 +118,7 @@ Separate models were trained on full posts and summaries, respectively, with ide
 
 ### Predictive Power
 
-Analysis has revealed that the compression of the summaries for the most part reduces domain specific linguistic signal available for classification. Content alone does explain roughly three times as much variance as the summary alone (Pseudo-R² 0,251 vs. 0,091), and consistently outperforms it in cross-validated predictive metrics (Table 1).
+Analysis has revealed that the compression of the summaries for the most part reduces domain specific linguistic signal available for classification. Content alone does explain roughly three times as much variance as the summary alone (Pseudo-*R*² = 0.251 vs. 0.091), and consistently outperforms it in cross-validated predictive metrics (Table 1).
 
 **Table 1: Cross-validated performance by feature set / model**
 
@@ -134,11 +134,11 @@ Analysis has revealed that the compression of the summaries for the most part re
 <sub>** *Calculated via a 1,000-row balanced test dataset*</sub>
 
 Adding summary and cross-text features (cosine similarity, entity retention) to the content-only model yields only a small improvement in predictive metrics
-(ΔAccuracy = 0.005, ΔROC-AUC = 0.007), but this improvement remains significant in the Likelihoood-Ratio-Test (LR=1514,9, df=9, p≈0). Having the small effect sizes in mind and the large sample size, this leads to the cautious interpreation that summary features do carry additional information, although their practical contribution beyond the content-only features remains modest.
+(ΔAccuracy = 0.005, ΔROC-AUC = 0.007), but this improvement remains significant in the likelihood-ratio test (LR = 1514.9, *df* = 9, *p* ≈ 0). Having the small effect sizes in mind and the large sample size, this leads to the cautious interpretation that summary features do carry additional information, although their practical contribution beyond the content-only features remains modest.
 
 ### Predictors
 
-A handful of features has revealed dominant contribution to the content-only model's prediction (Figure 1, Table 2). Lexical complexity, measured via the Coleman-Liau Index, shows the strongest effect (β = 0.82, OR = 2.28, 95% CI [2.21, 2.34]): a
+A handful of features has revealed dominant contribution to the content-only model's prediction (Figure 3, Table 2). Lexical complexity, measured via the Coleman-Liau Index, shows the strongest effect (β = 0.82, OR = 2.28, 95% CI [2.21, 2.34]): a
 one-standard-deviation increase in lexical complexity more than doubles the
 odds of a post belonging to a science-related subreddit. First-person singular pronoun rate shows the second-strongest effect, in the opposite direction (β = -0.61, OR = 0.55, 95% CI [0.54, 0.56]) — more self-referential language is associated with roughly half the odds of being science-related, consistent with our hypothesis that personal, narrative language use is more characteristic of non-science subreddits. Content length is also negatively associated with the science label (β = -0.54, OR = 0.59), potentially reflecting a tendency toward longer, more narrative personal posts in non-science subreddits. Profanity (β = -0.27, OR = 0.76) and subjectivity (β = -0.11, OR = 0.90) show smaller negative effects, suggesting that
 science-related content tends to be more objective and less vulgar in tone. Sentiment and Gunning Fog show negligible, non-significant effects once Coleman-Liau is included in the model (95% CIs include 1 on the odds scale), indicating they add little independent information given the other features.
@@ -155,14 +155,14 @@ science-related content tends to be more objective and less vulgar in tone. Sent
 | Gunning Fog Index | 0.02 | [0.00, 0.05] | 1.03 | [1.00, 1.05] |
 | Sentiment | -0.01 | [-0.03, 0.01] | 0.99 | [0.97, 1.01] |
 
-*Figure 1: Standardized coefficient comparison between the Summary-only and Content-only models (`figures/coef_comparison_summary_content.png`).*
+*Figure 3: Standardized coefficient comparison between the Summary-only and Content-only models (`figures/coef_comparison_summary_content.png`).*
 
 ## Conclusion
 
 Science and non-science related subreddits are linguistically distinctive.
 This study shows that science-related and non-science-related subreddits differ
 systematically in their language use, and that these differences can be captured
-with a small set of interpretable linguistic features. Classification based on original post content achieves strong predictive performance (ROC-AUC = 0.825), driven primarily by two consistent markers: higher lexical complexity (Coleman-Liau Index) and lower use of first-person singular pronouns, both pointing toward a more formal, less self-referential register in science-related discourse. Combining content with summary and cross-text features yields only marginal additional predictive power (ROC-AUC = 0.832), though this improvement is statistically robust but with an important caveat (see section Results and Discussion).
+with a small set of interpretable linguistic features. Classification based on original post content achieves strong predictive performance (ROC-AUC = 0.825), driven primarily by two consistent markers: higher lexical complexity (Coleman-Liau Index) and lower use of first-person singular pronouns, both pointing toward a more formal, less self-referential register in science-related discourse. Combining content with summary and cross-text features yields only marginal additional predictive power (ROC-AUC = 0.832), though this improvement, while statistically significant, comes with an important caveat (see section Results and Discussion).
 
 A key finding beyond the classification task itself is that TL;DR summarization
 does not compress all linguistic signals equally: the lexical complexity
@@ -174,7 +174,7 @@ wherever automatic summarization is applied to stylistically diverse text.
 
 These results should be interpreted alongside some limitations: several features rely on tools developed for different text domains (e.g., VADER for general social media sentiment, lexicon-based profanity detection), which may not transfer perfectly to Reddit's specific register. Furthermore, a subset of features
 (particularly the two retained readability metrics) show moderate
-multicollinearity, which we accounted for but could not fully eliminate.
+multicollinearity, which we characterized via pairwise correlation analysis but did not further mitigate through regularization.
 
 ## Contributions
 
@@ -188,7 +188,7 @@ multicollinearity, which we accounted for but could not fully eliminate.
 - Devlin, J., Chang, M.-W., Lee, K., & Toutanova, K. (2019). BERT: Pre-training of deep bidirectional transformers for language understanding. In Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics (NAACL-HLT), 4171–4186. https://doi.org/10.48550/arXiv.1810.04805
 - De Smedt, T. & Daelemans, W. (2012). Pattern for Python. Journal of Machine Learning Research, 13, 2063–2067
 - Honnibal, M., & Montani, I. (2017). spaCy: Industrial-strength Natural Language Processing [Software]. Explosion AI. https://spacy.io
-Hutto, C., & Gilbert, E. (2014). VADER: A Parsimonious Rule-Based Model for Sentiment Analysis of Social Media Text. Proceedings of the International AAAI Conference on Web and Social Media, 8(1), 216–225. https://doi.org/10.1609/icwsm.v8i1.14550
+- Hutto, C., & Gilbert, E. (2014). VADER: A Parsimonious Rule-Based Model for Sentiment Analysis of Social Media Text. Proceedings of the International AAAI Conference on Web and Social Media, 8(1), 216–225. https://doi.org/10.1609/icwsm.v8i1.14550
 - Loria, S. (2013). TextBlob [Software]. GitHub. https://github.com/sloria/TextBlob
 - Nguyen, S.T. (2018). better-profanity [Software]. GitHub. https://github.com/snguyenthanh/better_profanity
 - Pennebaker, J. W., & King, L. A. (1999). Linguistic styles: Language use as an individual difference. Journal of Personality and Social Psychology, 77(6), 1296–1312.
