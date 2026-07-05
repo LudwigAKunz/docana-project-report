@@ -185,10 +185,14 @@ multicollinearity, which we characterized via pairwise correlation analysis but 
 | Marco Stöhr          | Feature engineering, model building                                                        |
 
 ## References
-- Devlin, J., Chang, M.-W., Lee, K., & Toutanova, K. (2019). BERT: Pre-training of deep bidirectional transformers for language understanding. In Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics (NAACL-HLT), 4171–4186. https://doi.org/10.48550/arXiv.1810.04805
+- Coleman, M., & Liau, T. L. (1975). A computer readability formula designed for machine scoring. Journal of Applied Psychology, 60(2), 283–284. https://doi.org/10.1037/h0076540
 - De Smedt, T. & Daelemans, W. (2012). Pattern for Python. Journal of Machine Learning Research, 13, 2063–2067
+- Devlin, J., Chang, M.-W., Lee, K., & Toutanova, K. (2019). BERT: Pre-training of deep bidirectional transformers for language understanding. In Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics (NAACL-HLT), 4171–4186. https://doi.org/10.48550/arXiv.1810.04805
+- Flesch, R. (1948). A new readability yardstick. Journal of Applied Psychology, 32(3), 221–233. https://doi.org/10.1037/h0057532
+- Gunning, R. (1952). The Technique of Clear Writing. McGraw-Hill.
 - Honnibal, M., & Montani, I. (2017). spaCy: Industrial-strength Natural Language Processing [Software]. Explosion AI. https://spacy.io
 - Hutto, C., & Gilbert, E. (2014). VADER: A Parsimonious Rule-Based Model for Sentiment Analysis of Social Media Text. Proceedings of the International AAAI Conference on Web and Social Media, 8(1), 216–225. https://doi.org/10.1609/icwsm.v8i1.14550
+- Kincaid, J. P., Fishburne, R. P., Rogers, R. L., & Chissom, B. S. (1975). Derivation of new readability formulas (Automated Readability Index, Fog Count and Flesch Reading Ease Formula) for Navy enlisted personnel (Research Branch Report 8-75). Naval Air Station Memphis.
 - Loria, S. (2013). TextBlob [Software]. GitHub. https://github.com/sloria/TextBlob
 - Nguyen, S.T. (2018). better-profanity [Software]. GitHub. https://github.com/snguyenthanh/better_profanity
 - Pennebaker, J. W., & King, L. A. (1999). Linguistic styles: Language use as an individual difference. Journal of Personality and Social Psychology, 77(6), 1296–1312.
