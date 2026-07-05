@@ -46,65 +46,73 @@ preserved throughout the cleaning process. On average, content posts comprise 29
 ### Setup 
 
 
-Outline the tools, software, and hardware environment, along with configurations used for conducting your experiments. Be sure to document the Python version and other dependencies clearly. Provide step-by-step instructions on how to recreate your environment, ensuring anyone can replicate your setup with ease:
+Create the environments and install the dependencies:
 
 ```bash
-conda create --name myenv python=<version>
+conda create --name myenv python=3.13.9
 conda activate myenv
-```
-
-Include a `requirements.txt` file in your project repository. This file should list all the Python libraries and their versions needed to run the project. Provide instructions on how to install these dependencies using pip, for example:
-
-```bash
 pip install -r requirements.txt
 ```
+The full dataset (`corpus-webis-tldr-17.json`) is too large to be uploaded on github. It can be retrieved here [link] and should be put into `data/raw` to run the code. `science_subreddits.json` is also required to replicate the analysis. All further necessary datasets will be created by the notebooks, if run in the correct order:
 
-### Experiments
+- `sci_subreddits_sampling.ipynb` reads the extracted science subreddits and creates a balanced sample of science and non-science subreddits
+- `feature_engineering.ipynb` cleans the data and extracts the features used in the logistic regressions
+- The `BERT_classification` repository contains the `BERT_classification.ipynb` notebook which should be run on Google Colab in python 3.12. Upload the notebook, as well as the data sample `data_bert_sample.parquet` to colab and follow the instructions in the notebook to run it. Afterwards, download `bert_results.json` and store it in the `BERT_classification` folder.
+- `analysis.ipynb` runs the logit models, analyzes BERT's classification performance and creates the figures.
+
+
 
 ### Feature Engineering
 To investigate the linguistic properties of the Reddit comments and their respective TL;DR summaries, we computed a set of features across seven categories: readability, compression ratio, profanity, sentiment, subjectivity, named entity retention, and pronoun usage. All features were computed seperately for the original comment (content column) and the corresponding summary, which also allowed us the inspect both absolute values and relative differences between two texts.
 Some of the features are known for their lack of capacity to detect sarcasm and irony (e.g. VADER or better_profanity). In order to balance precision and output of the scores, we still relied on simpler and more intuitive (and therefore more interpretable models). 
 
-### Cosine Similarity
+#### Cosine Similarity
 As the primary quality measure for TL;DR summaries, we computed the cosine similarity between sentence embeddings of content and summary. Embeddings were generated using the all-MiniLM-L6-v2 model from the sentence-transformers library (Reimers & Gurevych, 2019), a lightweight model fine-tuned for semantic similarity tasks. Cosine similarity ranges from -1 to +1, where higher values indicate greater semantic overlap. Negative values, observed in XXX cases, indicate that content and summary are semantically divergent – qualitative inspection confirmed these correspond to cases where the TL;DR contains a joke, an emotional reaction, or an unrelated opinion rather than a genuine summary.
 
-### Readability
+#### Readability
 We used four different approaches to quantify linguistic complexity of the comments and summaries. Readability metrics are usually based on surface-level properties such as sentence length, word length, and syllable counts. Four different readability scores were initially computed, of which two were retained for further analysis.
 The Flesch Reading Ease score (Flesch, 1948) combines average sentence length and average number of syllables per word into a score ranging from 0 to 100, where higher values indicate easier readability. The Flesch-Kincaid Grade Level (Kincaid et al., 1975) uses the same underlying variables but maps them to a US school grade level, making results more intuitively interpretable. The Gunning Fog Index (Gunning, 1952) differs conceptually by counting complex words, defined as words with three or more syllables, rather than average syllable counts. This makes it particularly sensitive to domain-specific vocabulary, which is relevant for distinguishing scientific from general Reddit content. Finally, the Coleman-Liau Index (Coleman & Liau, 1975) departs from syllable-based approaches entirely by counting characters per word and sentences per 100 words, making it robust to abbreviations and acronyms that are common in informal online text.
 Prior to model building, we examined pairwise correlations among the four metrics. Flesch-Kincaid Grade and Gunning Fog showed a near-perfect correlation of 0.98, indicating redundancy. To avoid multicollinearity, we retained only Gunning Fog and Coleman-Liau as complementary representatives of two distinct measurement approaches. For both remaining readability scores, higher values indicate a more complex language and therefore a higher difficulty regarding the readability.
 
-![Readability Metric Correlation](figures/readability_correlation.png)
+![Readability Metric Correlation](figures/readability_correlation_matrix.png)
 *Figure 2: Pairwise correlation of the four candidate readability metrics on content text. Flesch-Kincaid Grade and Gunning Fog Index are near-perfectly correlated (r = 0.98), motivating the exclusion of Flesch-Kincaid Grade from further analysis.*
 
 
-### Compression Ratio
+#### Compression Ratio
 To account for the effect of strong shortenings of summaries compared to their original comments, we computed a compression ratio, representing the ratio of the length of the summary divided by the length of the original content.
 
-### Profanity
+#### Profanity
 Profanity was measured using a lexicon-based approach based on the better_profanity library (Nguyen, 2018), checking whether a comment or summary contains any word from a predefined list of profane terms. The resulting feature is binary, indicating the presence or absence of profanity in a given text. 
 
-### Sentiment
+#### Sentiment
 Sentiment was measured using VADER (Valence Aware Dictionary and sEntiment Reasoner), a lexicon-based sentiment analysis tool specifically designed for social media text (Hutto & Gilbert, 2014). VADER produces a compound score ranging from -1 (most negative) to +1 (most positive), which aggregates positive, negative, and neutral sub-scores with adjustments for capitalization, punctuation, and degree modifiers. Its social media orientation makes it particularly suitable for Reddit data.
 
-### Subjectivity
+#### Subjectivity
 Subjectivity scores were computed using TextBlob (Loria, 2013), which draws on the Pattern lexicon (De Smedt & Daelemans, 2012) to assign each word a manually annotated subjectivity score between 0 and 1, where 0 represents objective factual language and 1 represents strongly subjective opinion language. The document-level score is computed as a weighted average over all lexicon-matched words. A relevant limitation for our dataset is that scientific intensifiers such as "significantly" or "strongly" may be scored as subjective despite occurring in factual contexts, potentially biasing subjectivity scores upward for science-domain content.
 
-### Named Entity Retention Rate
+#### Named Entity Retention Rate
 To assess how faithfully TL;DR summaries preserve the informational content of the original comment, we computed an Entity Retention Rate (ERR). Named entities were extracted from both content and summary using spaCy (Honnibal & Montani, 2017). The ERR is defined as the proportion of entities identified in the content that also appear in the summary. A score of 0 indicates that no entities were retained, while a score of 1 indicates complete retention. Comments containing no named entities were assigned the median ERR of the dataset. This strict exact-match approach proved conservative in practice (the median ERR was 0.0) suggesting that TL;DR authors rarely reproduce entity mentions verbatism.
 
-### Pronoun Usage
+#### Pronoun Usage
 By hypothesizing that personal, self-referential language is more common in
 non-science subreddits, we measured the rate of first-person singular
 pronouns (I, me, my, mine, myself) that is commonly referred to as "I-words" in
 language research (Pennebaker & King, 1999), and was implemented via regular expression matching. This is deliberately narrower than personal pronouns in the
-grammatical sense, which would also include we/you/he/she/they. Both the content and summary pronoun rate showed similar means (content m = 0.049; summary m = 0.039) but differed in their medians. The summary pronoun rate median is 0, indicating that more than half of the summaries contain no first-person singular pronoun at all — consistent with the expectation that summaries adopt a more neutral, less personal register.
+grammatical sense, which would also include we/you/he/she/they. Both the content and summary pronoun rate showed similar means (content m = 0.049; summary m = 0.039) but differed in their medians. The summary pronoun rate median is 0, indicating that more than half of the summaries contain no first-person singular pronoun at all. This is consistent with the expectation that summaries adopt a more neutral, less personal register.
 
 ### Statistical Analysis
 Prior to the model building, all features were standardized (mean = 0, sd = 1) to ensure comparable coefficent magnitudes. Statistical analysis was conducted at α = 0.05. We then checked pairwise correlations among all engineered features to identify redundancy and potential multicollinearity.
 
 We modeled subreddit category science vs non-science using logistic regression comparing three feature sets: content-only, summary-only, and a coombined full model including content and summary with cosine similarity and entity retention rate. Predictive performance was evaluated via 10-fold stratified cross-validation, while preserving class balance in every fold using scikit-learn's LogisticRegression (lbfgs solver, L2 penalty, max_iter=1000), reporting accuracy, precision, recall, F1, and ROC-AUC as means across folds.
-To interprete feature contributions, we additionally fit standardized logistic regression models (statsmodels, Newton-Raphson MLE, converged within 6
-iterations for all three feature sets) on the full sample, reporting coefficients with 95% confidence intervals and p-values. Furthermore, we compared the full model to both individual models via Likelihood Ratio test to investigate, if the full model does show significant explanatory power.
+To interpret feature contributions, we additionally fit standardized logistic regression models (statsmodels, Newton-Raphson MLE, converged within 6 iterations for all three feature sets) on the full sample, reporting coefficients with 95% confidence intervals and p-values. Furthermore, we compared the full model to both individual models via Likelihood Ratio test to investigate, if the full model does show significant explanatory power.
+
+### BERT classification
+To examine how latent semantic information affects the predictive power of reddit posts and, especially, their TL;DR summaries, we fine-tuned a base BERT (Devlin et al., 2019) model to classify whether posts come from science-related subreddits. This transformer-based encoder model leverages semantic and context-based information for tasks like text classification. 
+
+For computational efficiency, we created a balanced sample of 6,000 rows and split it into a 4,000-row training and 1,000-row evaluation and test datasets, respectively. Since BERT can only accept inputs of 512 or fewer tokens, roughly 21% of posts' contents had to be truncated. This was not an issue with the substantially shorter summaries, where only 1.2% of observations had to be truncated at a cutoff of 256 tokens.
+
+Separate models were trained on full posts and summaries, respectively, with identical training parameters. The default learning rate of $5*10^{-5}$ was used and models were trained for 5 epochs with batch sizes of 16. 
+
 
 ## Results and Discussion
 
@@ -114,13 +122,16 @@ Analysis has revealed that the compression of the summaries for the most part re
 
 **Table 1: Cross-validated performance by feature set / model**
 
-| Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
-|---|:--------:|:---------:|:------:|:--------:|:-------:|
-| Logit (Summary) | 0.656 | 0.634 | 0.723 | 0.675 | 0.708 |
-| Logit (Content) | 0.750 | 0.750 | 0.742 | 0.746 | 0.825 |
-| Logit (Full) | 0.755 | 0.755 | 0.747 | 0.751 | 0.832 |
-| BERT (Content) | 0.95 | 0.946 | 0.954 | 0.95 | 0.989 |
-| BERT (Summary) | 0.86 | 0.804 | 0.952 | 0.872 | 0.946 |
+| Model           | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
+|:---------------:|:--------:|:---------:|:------:|:--------:|:-------:|
+| Logit (Summary)\* | 0.656    | 0.634     | 0.723  | 0.675    | 0.708   |
+| Logit (Content)\*| 0.75     | 0.75      | 0.742  | 0.746    | 0.825   |
+| Logit (full)\*    | 0.755    | 0.755     | 0.747  | 0.751    | 0.832   |
+| BERT (Content)\*\*  | 0.955    | 0.949     | 0.962  | 0.955    | 0.986   |
+| BERT (Summary)\*\*  | 0.871    | 0.855     | 0.894  | 0.874    | 0.941   |
+
+<sub>* *Calculated via 10-fold stratified cross-validation*</sub>  
+<sub>** *Calculated via a 1,000-row balanced test dataset*</sub>
 
 Adding summary and cross-text features (cosine similarity, entity retention) to the content-only model yields only a small improvement in predictive metrics
 (ΔAccuracy = 0.005, ΔROC-AUC = 0.007), but this improvement remains significant in the Likelihoood-Ratio-Test (LR=1514,9, df=9, p≈0). Having the small effect sizes in mind and the large sample size, this leads to the cautious interpreation that summary features do carry additional information, although their practical contribution beyond the content-only features remains modest.
@@ -174,6 +185,7 @@ multicollinearity, which we accounted for but could not fully eliminate.
 | Marco Stöhr          | Feature engineering, model building                                                        |
 
 ## References
+- Devlin, J., Chang, M.-W., Lee, K., & Toutanova, K. (2019). BERT: Pre-training of deep bidirectional transformers for language understanding. In Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics (NAACL-HLT), 4171–4186. https://doi.org/10.48550/arXiv.1810.04805
 - De Smedt, T. & Daelemans, W. (2012). Pattern for Python. Journal of Machine Learning Research, 13, 2063–2067
 - Honnibal, M., & Montani, I. (2017). spaCy: Industrial-strength Natural Language Processing [Software]. Explosion AI. https://spacy.io
 Hutto, C., & Gilbert, E. (2014). VADER: A Parsimonious Rule-Based Model for Sentiment Analysis of Social Media Text. Proceedings of the International AAAI Conference on Web and Social Media, 8(1), 216–225. https://doi.org/10.1609/icwsm.v8i1.14550
