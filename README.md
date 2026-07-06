@@ -138,23 +138,22 @@ Adding summary and cross-text features (cosine similarity, entity retention) to 
 
 ### Predictors
 
-A handful of features has revealed dominant contribution to the content-only model's prediction (Figure 3, Table 2). Lexical complexity, measured via the Coleman-Liau Index, shows the strongest effect (β = 0.82, OR = 2.28, 95% CI [2.21, 2.34]): a
-one-standard-deviation increase in lexical complexity more than doubles the
-odds of a post belonging to a science-related subreddit. First-person singular pronoun rate shows the second-strongest effect, in the opposite direction (β = -0.61, OR = 0.55, 95% CI [0.54, 0.56]) — more self-referential language is associated with roughly half the odds of being science-related, consistent with our hypothesis that personal, narrative language use is more characteristic of non-science subreddits. Content length is also negatively associated with the science label (β = -0.54, OR = 0.59), potentially reflecting a tendency toward longer, more narrative personal posts in non-science subreddits. Profanity (β = -0.27, OR = 0.76) and subjectivity (β = -0.11, OR = 0.90) show smaller negative effects, suggesting that
-science-related content tends to be more objective and less vulgar in tone. Sentiment and Gunning Fog show negligible, non-significant effects once Coleman-Liau is included in the model (95% CIs include 1 on the odds scale), indicating they add little independent information given the other features.
+A handful of features has revealed dominant contribution to the content-only model's prediction (Figure 3, Table 2). Lexical complexity, measured via the Coleman-Liau Index, shows the strongest effect (β = 0.84, OR = 2.31, 95% CI [2.25, 2.38]): a one-standard-deviation increase in lexical complexity more than doubles the odds of a post belonging to a science-related subreddit. First-person singular pronoun rate shows the second-strongest effect, in the opposite direction (β = -0.58, OR = 0.56, 95% CI [0.55, 0.57]) — more self-referential language is associated with roughly half the odds of being science-related, consistent with our hypothesis that personal, narrative language use is more characteristic of non-science subreddits. Content length is also negatively associated with the science label (β = -0.44, OR = 0.65), potentially reflecting a tendency toward longer, more narrative personal posts in non-science subreddits. Profanity (β = -0.27, OR = 0.77) and subjectivity (β = -0.08, OR = 0.92) show smaller negative effects, suggesting that
+science-related content tends to be more objective and less vulgar in tone. Gunning Fog shows a negligible, non-significant effect once Coleman-Liau is included in the model (95% CI includes 1 on the odds scale), indicating it adds little independent information given the other features.
 
 **Table 2: Content-only model — standardized coefficients and odds ratios**
 
 | Feature | β (log-odds) | 95% CI | Odds Ratio | 95% CI (OR) |
 |---|---|---|---|---|
-| Coleman-Liau Index | 0.82 | [0.79, 0.85] | 2.28 | [2.21, 2.34] |
-| Pronoun rate (I-words) | -0.61 | [-0.63, -0.59] | 0.55 | [0.54, 0.56] |
-| Content length | -0.54 | [-0.56, -0.51] | 0.59 | [0.57, 0.60] |
-| Profanity | -0.27 | [-0.29, -0.25] | 0.76 | [0.75, 0.78] |
-| Subjectivity | -0.11 | [-0.12, -0.09] | 0.90 | [0.88, 0.91] |
+| Coleman-Liau Index | 0.84 | [0.81, 0.87] | 2.31 | [2.25, 2.38] |
+| Pronoun rate (I-words) | -0.58 | [-0.60, -0.56] | 0.56 | [0.55, 0.57] |
+| Content length | -0.44 | [-0.46, -0.41] | 0.65 | [0.63, 0.66] |
+| Profanity | -0.27 | [-0.28, -0.25] | 0.77 | [0.75, 0.78] |
+| Subjectivity | -0.08 | [-0.10, -0.07] | 0.92 | [0.90, 0.94] |
 | Gunning Fog Index | 0.02 | [0.00, 0.05] | 1.03 | [1.00, 1.05] |
-| Sentiment | -0.01 | [-0.03, 0.01] | 0.99 | [0.97, 1.01] |
+| Sentiment Intensity | -0.23 | [-0.25, -0.21] | 0.79 | [0.78, 0.81] |
 
+![Coefficient Comparison](figures/coef_comparison_summary_content.png)
 *Figure 3: Standardized coefficient comparison between the Summary-only and Content-only models (`figures/coef_comparison_summary_content.png`).*
 
 ## Conclusion
