@@ -25,14 +25,16 @@ Follow this steps to set up your project report:
 
 # Project Title
 
-_Group members: Ludwig Kunz, Marco Stöhr, Robert Seidel
+Group members: Ludwig Kunz, Marco Stöhr, Robert Seidel
 
 ## Introduction
-Reddit is a large social media platform organized into topic-specific communities called subreddits, in which users post and discuss content in a wide range of registers and styles. It has driven our interest in suspecting that language use varies systematically along dimensions such as formality, self-reference, and informational density, depending on communicative purpose and audience. Scientific and academic discourse is typically associated with the
-formal, informational end of this spectrum, whereas everyday social media discourse tends toward more informal, personally biased involved language use. This raises the question of whether science-related subreddits exhibit systematically different linguistic patterns compared to non-science subreddits? In particular regarding readability, self-reference, affective language, and lexical register, and whether these differences already emerge in short TL;DR summaries or only in the original posts. We investigate this by comparing content and summary texts from a balanced sample of science and non-science subreddits using a set of manually constructed linguistic features, and by testing how well these features predict a post's subreddit category. 
+Reddit is a large social media platform organized into topic-specific communities called subreddits, in which users post and discuss content in a wide range of registers and styles. It has driven our interest in suspecting that language use varies systematically along dimensions such as formality, self-reference, and informational density, depending on communicative purpose and audience. Scientific and academic discourse is typically associated with the formal, informational end of this spectrum, whereas everyday social media discourse tends toward more informal, personally biased involved language use. This raises the question of whether science-related subreddits exhibit systematically different linguistic patterns compared to non-science subreddits? In particular regarding readability, self-reference, affective language, and lexical register, and whether these differences already emerge in short TL;DR summaries or only in the original posts. 
+
+We investigate this by comparing content and summary texts from a balanced sample of science and non-science subreddits using a set of manually constructed linguistic features, and by testing how well these features predict a post's subreddit category. To analyze if there are latent, semantic differences between science and non-science posts, we train a BERT classifier for the same task.
+ 
 
 ## Dataset & Dataset Construction
-The corpus used for analysis is the Webis-TLDR-17 dataset [webis/tldr-17](https://huggingface.co/datasets/webis/tldr-17), introduced by Völske et al. (2017), who mined Reddit posts and their author-written TL;DR summaries for automatic summarization research. The full corpus comprises 29,651 unique subreddits. 
+The corpus used for our analysis is the Webis-TLDR-17 dataset [webis/tldr-17](https://huggingface.co/datasets/webis/tldr-17), introduced by Völske et al. (2017), who mined Reddit posts and their author-written TL;DR summaries for automatic summarization research. The full corpus comprises 29,651 unique subreddits. 
 We began by identifying science-related content. Therefore, we compiled a reference list of 365 science subreddits (spanning 8 topic areas and 32 subtopics) from the r/ScienceSubreddits community wiki. Matching this list against the subreddits present in the corpus, we identified 132 science subreddits, contributing 41,832 posts. To construct a balanced binary classification task, we randomly sampled an equal number of posts (41,832) from the remaining 3,806,498
 non-science posts (seed=42), yielding a balanced sample of 83,664 posts.
 The data cleaning process involved the removal of duplicate content, posts with implausible readability score (Flesch-Kincaid Grade ≥ 30, indicating markup/list artifacts), summaries shorter than 3 words, and posts with a low alphabetic-character ratio (<0.5). The final dataset consists of 79,179 posts of which 50.5% are non-science related and 49.5% are science related. Dataset balance was
@@ -67,7 +69,7 @@ To investigate the linguistic properties of the Reddit comments and their respec
 Some of the features are known for their lack of capacity to detect sarcasm and irony (e.g. VADER or better_profanity). In order to balance precision and output of the scores, we still relied on simpler and more intuitive (and therefore more interpretable models). 
 
 #### Cosine Similarity
-As the primary quality measure for TL;DR summaries, we computed the cosine similarity between sentence embeddings of content and summary. Embeddings were generated using the all-MiniLM-L6-v2 model from the sentence-transformers library (Reimers & Gurevych, 2019), a lightweight model fine-tuned for semantic similarity tasks. Cosine similarity ranges from -1 to +1, where higher values indicate greater semantic overlap. Negative values, observed in XXX cases, indicate that content and summary are semantically divergent – qualitative inspection confirmed these correspond to cases where the TL;DR contains a joke, an emotional reaction, or an unrelated opinion rather than a genuine summary.
+As the primary quality measure for TL;DR summaries, we computed the cosine similarity between sentence embeddings of content and summary. Embeddings were generated using the all-MiniLM-L6-v2 model from the sentence-transformers library (Reimers & Gurevych, 2019), a lightweight model fine-tuned for semantic similarity tasks. Cosine similarity ranges from -1 to +1, where higher values indicate greater semantic overlap. Negative values, observed in 675 cases, indicate that content and summary are semantically divergent – qualitative inspection confirmed these correspond to cases where the TL;DR contains a joke, an emotional reaction, or an unrelated opinion rather than a genuine summary.
 
 #### Readability
 We used four different approaches to quantify linguistic complexity of the comments and summaries. Readability metrics are usually based on surface-level properties such as sentence length, word length, and syllable counts. Four different readability scores were initially computed, of which two were retained for further analysis.
@@ -84,8 +86,8 @@ To account for the effect of strong shortenings of summaries compared to their o
 #### Profanity
 Profanity was measured using a lexicon-based approach based on the better_profanity library (Nguyen, 2018), checking whether a comment or summary contains any word from a predefined list of profane terms. The resulting feature is binary, indicating the presence or absence of profanity in a given text. 
 
-#### Sentiment
-Sentiment was measured using VADER (Valence Aware Dictionary and sEntiment Reasoner), a lexicon-based sentiment analysis tool specifically designed for social media text (Hutto & Gilbert, 2014). VADER produces a compound score ranging from -1 (most negative) to +1 (most positive), which aggregates positive, negative, and neutral sub-scores with adjustments for capitalization, punctuation, and degree modifiers. Its social media orientation makes it particularly suitable for Reddit data.
+#### Sentiment Intensity
+Sentiment was measured using VADER (Valence Aware Dictionary and sEntiment Reasoner), a lexicon-based sentiment analysis tool specifically designed for social media text (Hutto & Gilbert, 2014). VADER produces a compound score ranging from -1 (most negative) to +1 (most positive), which aggregates positive, negative, and neutral sub-scores with adjustments for capitalization, punctuation, and degree modifiers. Its social media orientation makes it particularly suitable for Reddit data. To test how the intensity of the sentiment differs between science and non-science posts, the absolute values of the sentiment scores were computed, with higher values indicating stronger positive or negative sentiment.
 
 #### Subjectivity
 Subjectivity scores were computed using TextBlob (Loria, 2013), which draws on the Pattern lexicon (De Smedt & Daelemans, 2012) to assign each word a manually annotated subjectivity score between 0 and 1, where 0 represents objective factual language and 1 represents strongly subjective opinion language. The document-level score is computed as a weighted average over all lexicon-matched words. A relevant limitation for our dataset is that scientific intensifiers such as "significantly" or "strongly" may be scored as subjective despite occurring in factual contexts, potentially biasing subjectivity scores upward for science-domain content.
@@ -109,32 +111,34 @@ To interpret feature contributions, we additionally fit standardized logistic re
 ### BERT classification
 To examine how latent semantic information affects the predictive power of reddit posts and, especially, their TL;DR summaries, we fine-tuned a base BERT (Devlin et al., 2019) model to classify whether posts come from science-related subreddits. This transformer-based encoder model leverages semantic and context-based information for tasks like text classification. 
 
-For computational efficiency, we created a balanced sample of 6,000 rows and split it into a 4,000-row training and 1,000-row evaluation and test datasets, respectively. Since BERT can only accept inputs of 512 or fewer tokens, roughly 21% of posts' contents had to be truncated. This was not an issue with the substantially shorter summaries, where only 1.2% of observations had to be truncated at a cutoff of 256 tokens.
+For computational efficiency, we created a balanced sample of 6,000 rows and split it into a 4,000-row training and 1,000-row evaluation and test datasets, respectively. Since BERT can only accept inputs of 512 or fewer tokens, roughly 20.4% of posts' contents had to be truncated. This was not an issue with the substantially shorter summaries, where only 1.1% of observations had to be truncated at a cutoff-point of 256 tokens.
 
-Separate models were trained on full posts and summaries, respectively, with identical training parameters. The default learning rate of $5*10^{-5}$ was used and models were trained for 5 epochs with batch sizes of 16. 
+Separate models were trained on full posts and summaries, respectively, with identical training parameters. The default learning rate of $5*10^{-5}$ was used and models were trained for 5 epochs with batch sizes of 16. To mitigate overtraining, early stopping was implemented with a patience of 2 epochs, leading to an actual training time for summaries of only 4 epochs, while prediction on contents was trained for the entire duration. CrossEntropyLoss was used as a loss function and the best model was chosen based on the ROC-AUC on the evaluation dataset.
 
 
 ## Results and Discussion
 
 ### Predictive Power
 
-Analysis has revealed that the compression of the summaries for the most part reduces domain specific linguistic signal available for classification. Content alone does explain roughly three times as much variance as the summary alone (Pseudo-*R*² = 0.251 vs. 0.091), and consistently outperforms it in cross-validated predictive metrics (Table 1).
+Analysis has revealed that the compression of the summaries for the most part reduces domain specific linguistic signal available for classification. Content alone explains roughly three times as much variance as the summary alone (Pseudo-*R*² = 0.251 vs. 0.091), and consistently outperforms it in cross-validated predictive metrics (Table 1).
 
 **Table 1: Cross-validated performance by feature set / model**
 
 | Model           | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
 |:---------------:|:--------:|:---------:|:------:|:--------:|:-------:|
-| Logit (Summary)\* | 0.656    | 0.634     | 0.723  | 0.675    | 0.708   |
-| Logit (Content)\*| 0.75     | 0.75      | 0.742  | 0.746    | 0.825   |
-| Logit (full)\*    | 0.755    | 0.755     | 0.747  | 0.751    | 0.832   |
-| BERT (Content)\*\*  | 0.955    | 0.949     | 0.962  | 0.955    | 0.986   |
+| Logit (Summary)\* | 0.661    | 0.645     | 0.701  | 0.672    | 0.715   |
+| Logit (Content)\* | 0.751    | 0.753     | 0.74   | 0.746    | 0.827   |
+| Logit (full)\*    | 0.759    | 0.761     | 0.748  | 0.755    | 0.836   |
 | BERT (Summary)\*\*  | 0.871    | 0.855     | 0.894  | 0.874    | 0.941   |
+| BERT (Content)\*\*  | 0.955    | 0.949     | 0.962  | 0.955    | 0.986   |
 
 <sub>* *Calculated via 10-fold stratified cross-validation*</sub>  
 <sub>** *Calculated via a 1,000-row balanced test dataset*</sub>
 
 Adding summary and cross-text features (cosine similarity, entity retention) to the content-only model yields only a small improvement in predictive metrics
 (ΔAccuracy = 0.005, ΔROC-AUC = 0.007), but this improvement remains significant in the likelihood-ratio test (LR = 1514.9, *df* = 9, *p* ≈ 0). Having the small effect sizes in mind and the large sample size, this leads to the cautious interpretation that summary features do carry additional information, although their practical contribution beyond the content-only features remains modest.
+
+Compared to the modest-to-good predictive power of the extracted features, the BERT classifiers, which are aware to context and semantics of the texts, achieve a substantive performance boost. The lower to rows of Table 2 show the classification metrics of the two models, trained and examined on posts' content and summaries, respectively. These metrics stem from a balanced 1,000 row test set which was not seen during training. Even the classifier which was only trained on the short summaries yielded an impressive 87.1% accuracy, with other metrics relatively similar. The content model substantially improves upon this performance with almost 96% accuracy and all other observed metrics hovering around or above 95%. This indicates that, even though there is an overall difference between the classification based on linguistic features on the one hand, and context and semantics on the other, the TL;DR summaries still lose a significant amount of information that is contained in the full posts.
 
 ### Predictors
 
@@ -171,9 +175,11 @@ unchanged. This suggests that register markers vary in how resilient they are
 to text compression — a distinction that may be relevant beyond this dataset,
 wherever automatic summarization is applied to stylistically diverse text.
 
+Comparing the logistic regression performance with that of BERT classifiers trained only on the texts themselves showcases the power of transformer-based text classification, as even the summary-based classifier strongly outperforms the best logistic regression model. A comparison between the summary-only vs. the full content classifiers also indicates that, in addition to linguistic signals, semantic information is also lost when users compress their posts into TL;DR summaries.
+
 These results should be interpreted alongside some limitations: several features rely on tools developed for different text domains (e.g., VADER for general social media sentiment, lexicon-based profanity detection), which may not transfer perfectly to Reddit's specific register. Furthermore, a subset of features
 (particularly the two retained readability metrics) show moderate
-multicollinearity, which we characterized via pairwise correlation analysis but did not further mitigate through regularization.
+multicollinearity, which we characterized via pairwise correlation analysis but did not further mitigate through regularization. It should also be mentioned that the levels of information provided by full posts vs. summaries were only judged in regards to predicting whether a post was made for a science-related subreddit. Other information dimensions may yield differing results and are therefore also worth exploring.
 
 ## Contributions
 
