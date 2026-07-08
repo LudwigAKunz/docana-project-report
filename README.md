@@ -54,7 +54,7 @@ conda create --name myenv python=3.13.9
 conda activate myenv
 pip install -r requirements.txt
 ```
-The full dataset (`corpus-webis-tldr-17.json`) is too large to be uploaded on github. It can be retrieved [here](https://huggingface.co/datasets/webis/tldr-17) and should be put into `data/raw` to run the code. `science_subreddits.json` is also required to replicate the analysis. All further necessary datasets will be created by the notebooks, if run in the correct order:
+The full dataset (`corpus-webis-tldr-17.json`) is too large to be uploaded on github. It can be retrieved [here](https://huggingface.co/datasets/webis/tldr-17) and should be put into `data` to run the code. `science_subreddits.json` is also required to replicate the analysis. All further necessary datasets will be created by the notebooks, if run in the correct order:
 
 - `sci_subreddits_sampling.ipynb` reads the extracted science subreddits and creates a balanced sample of science and non-science subreddits
 - `feature_engineering.ipynb` cleans the data and extracts the features used in the logistic regressions

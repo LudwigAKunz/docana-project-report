@@ -1,9 +1,8 @@
 # corpus dataset, checkpoint data and final dataset after feature engineering (too large; corpus dataset is required, other datasets can be constructed via the uploaded notebooks)
 
-data/raw/*
-data/checkpoints/checkpoint*
 data/data_final_features.pkl
 data/science_sample_balanced.pkl
+data/corpus-webis-tldr-17.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
