@@ -37,8 +37,7 @@ We investigate this by comparing content and summary texts from a balanced sampl
 The corpus used for our analysis is the Webis-TLDR-17 dataset [webis/tldr-17](https://huggingface.co/datasets/webis/tldr-17), introduced by Völske et al. (2017), who mined Reddit posts and their author-written TL;DR summaries for automatic summarization research. The full corpus comprises 29,651 unique subreddits. 
 We began by identifying science-related content. Therefore, we compiled a reference list of 365 science subreddits (spanning 8 topic areas and 32 subtopics) from the r/ScienceSubreddits community wiki. Matching this list against the subreddits present in the corpus, we identified 132 science subreddits, contributing 41,832 posts. To construct a balanced binary classification task, we randomly sampled an equal number of posts (41,832) from the remaining 3,806,498
 non-science posts (seed=42), yielding a balanced sample of 83,664 posts.
-The data cleaning process involved the removal of duplicate content, posts with implausible readability score (Flesch-Kincaid Grade ≥ 30, indicating markup/list artifacts), summaries shorter than 3 words, and posts with a low alphabetic-character ratio (<0.5). The final dataset consists of 79,179 posts of which 50.5% are non-science related and 49.5% are science related. Dataset balance was
-preserved throughout the cleaning process. On average, content posts comprise *M* = 295 words (*Mdn* = 207, max = 6,308) and summaries *M* = 33 words (*Mdn* = 21, max = 2,576), corresponding to a mean compression ratio of *M* = 0.157 (*Mdn* = 0.108).
+The data cleaning process involved the **removal of duplicate content**, posts with implausible readability score (Flesch-Kincaid Grade ≥ 30, indicating markup/list artifacts), summaries shorter than 3 words, and posts with a low alphabetic-character ratio (<0.5). The final dataset consists of 79,179 posts of which 50.5% are non-science related and 49.5% are science related. On average, content posts comprise *M* = 295 words (*Mdn* = 207, max = 6,308) and summaries *M* = 33 words (*Mdn* = 21, max = 2,576), corresponding to a mean compression ratio of *M* = 0.157 (*Mdn* = 0.108).
 
 ![Top 10 Subreddits by Post Share](figures/top10_subreddits.png)
 *Figure 1: Share of posts contributed by the ten most frequent subreddits, separately for science and non-science subreddits.*
@@ -65,8 +64,8 @@ The full dataset (`corpus-webis-tldr-17.json`) is too large to be uploaded on gi
 
 
 ### Feature Engineering
-To investigate the linguistic properties of the Reddit comments and their respective TL;DR summaries, we computed a set of features across seven categories: readability, compression ratio, profanity, sentiment, subjectivity, named entity retention, and pronoun usage. All features were computed separately for the original comment (content column) and the corresponding summary, which also allowed us to inspect both absolute values and relative differences between two texts.
-Some of the features are known for their lack of capacity to detect sarcasm and irony (e.g. VADER or better_profanity). In order to balance precision and output of the scores, we still relied on simpler and more intuitive (and therefore more interpretable models). 
+To investigate the linguistic properties of the Reddit comments and their respective TL;DR summaries, we computed a set of features across seven categories: readability, profanity, sentiment, subjectivity, named entity retention, and pronoun usage. All features were computed separately for the original comment (content column) and the corresponding summary, which also allowed us to inspect both absolute values and relative differences between two texts.
+Some of the features are known for their lack of capacity to detect sarcasm and irony (e.g. VADER or better_profanity). In order to balance precision and output of the scores, we still relied on simpler and more intuitive (and therefore more interpretable) models. 
 
 #### Cosine Similarity
 As the primary quality measure for TL;DR summaries, we computed the cosine similarity between sentence embeddings of content and summary. Embeddings were generated using the all-MiniLM-L6-v2 model from the sentence-transformers library (Reimers & Gurevych, 2019), a lightweight model fine-tuned for semantic similarity tasks. Cosine similarity ranges from -1 to +1, where higher values indicate greater semantic overlap. Negative values, observed in 675 cases, indicate that content and summary are semantically divergent – qualitative inspection confirmed these correspond to cases where the TL;DR contains a joke, an emotional reaction, or an unrelated opinion rather than a genuine summary.
@@ -78,10 +77,6 @@ Prior to model building, we examined pairwise correlations among the four metric
 
 ![Readability Metric Correlation](figures/readability_correlation_matrix.png)
 *Figure 2: Pairwise correlation of the four candidate readability metrics on content text. Flesch-Kincaid Grade and Gunning Fog Index are near-perfectly correlated (r = 0.98), motivating the exclusion of Flesch-Kincaid Grade from further analysis.*
-
-
-#### Compression Ratio
-To account for the effect of strong shortenings of summaries compared to their original comments, we computed a compression ratio, representing the ratio of the length of the summary divided by the length of the original content.
 
 #### Profanity
 Profanity was measured using a lexicon-based approach based on the better_profanity library (Nguyen, 2018), checking whether a comment or summary contains any word from a predefined list of profane terms. The resulting feature is binary, indicating the presence or absence of profanity in a given text. 
@@ -158,7 +153,7 @@ science-related content tends to be more objective and less vulgar in tone. Gunn
 | Sentiment Intensity | -0.23 | [-0.25, -0.21] | 0.79 | [0.78, 0.81] |
 
 ![Coefficient Comparison](figures/coef_comparison_summary_content.png)
-*Figure 3: Standardized coefficient comparison between the Summary-only and Content-only models (`figures/coef_comparison_summary_content.png`).*
+*Figure 3: Standardized coefficient comparison between the Summary-only and Content-only models.*
 
 ## Conclusion
 
@@ -185,9 +180,9 @@ multicollinearity, which we characterized via pairwise correlation analysis but 
 
 | Team Member  | Contributions                                             |
 |--------------|-----------------------------------------------------------|
-| Ludwig Kunz  | Data collection, model building, visualization |                                                       |
-| Robert Seidel  | Feature engineering                                                       |
-| Marco Stöhr          | Feature engineering, model building                                                        |
+| Ludwig Kunz  | Data collection, BERT models, visualization |                                                       |
+| Robert Seidel  | Feature engineering, analyzing results                                                       |
+| Marco Stöhr          | Feature engineering, Logit models                                                        |
 
 ## References
 - Coleman, M., & Liau, T. L. (1975). A computer readability formula designed for machine scoring. Journal of Applied Psychology, 60(2), 283–284. https://doi.org/10.1037/h0076540
