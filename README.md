@@ -83,7 +83,7 @@ To examine how latent semantic information affects the predictive power of reddi
 
 For computational efficiency, we created a balanced sample of 6,000 rows and split it into a 4,000-row training and 1,000-row evaluation and test datasets, respectively. Since BERT can only accept inputs of 512 or fewer tokens, roughly 20.4% of posts' contents had to be truncated. This was not an issue with the substantially shorter summaries, where only 1.1% of observations had to be truncated at a cutoff-point of 256 tokens.
 
-Separate models were trained on full posts and summaries, respectively, with identical training parameters. The default learning rate of $5*10^{-5}$ was used and models were trained for 5 epochs with batch sizes of 16. To mitigate overtraining, early stopping was implemented with a patience of 2 epochs, leading to an actual training time for summaries of only 4 epochs, while prediction on contents was trained for the entire duration. CrossEntropyLoss was used as a loss function and the best model was chosen based on the ROC-AUC on the evaluation dataset.
+Separate models were trained on full posts and summaries, respectively, with identical training parameters. The default learning rate of 5x10<sup>-5</sup> was used and models were trained for 5 epochs with batch sizes of 16. To mitigate overtraining, early stopping was implemented with a patience of 2 epochs, leading to an actual training time for summaries of only 4 epochs, while prediction on contents was trained for the entire duration. CrossEntropyLoss was used as a loss function and the best model was chosen based on the ROC-AUC on the evaluation dataset.
 
 
 ## Results and Discussion
